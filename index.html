@@ -1,0 +1,2613 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="75 leviers d'optimisation pour dirigeants de TPE, filtres selon la situation de l'entreprise, avec la question exacte a poser a son expert-comptable et les renvois officiels. Par Bastien Raffin.">
+<meta name="author" content="Bastien Raffin">
+<meta name="color-scheme" content="light dark">
+<style>
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0}
+  img{max-width:100%}
+  [hidden]{display:none!important}
+</style>
+<title>Le carnet de leviers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root{
+    --paper:#EEF1EA;
+    --surface:#FAFBF7;
+    --surface-2:#E3E8DD;
+    --ink:#121C17;
+    --ink-2:#47554E;
+    --ink-3:#73827A;
+    --rule:#D2D8CA;
+    --rule-strong:#B4BDAF;
+    --accent:#1B5540;
+    --accent-ink:#FAFBF7;
+    --accent-soft:#DBE7DE;
+    --explore:#2A5678;
+    --explore-soft:#DCE5EC;
+    --gold:#7F5C12;
+    --gold-soft:#EFE5CE;
+    --dot-off:#C6CEC2;
+    --accent-mid:#B7CFC0;
+    --focus:#1B5540;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0F1412;
+      --surface:#151C19;
+      --surface-2:#1C2521;
+      --ink:#E6EDE7;
+      --ink-2:#A3B1A8;
+      --ink-3:#7C8A83;
+      --rule:#27322D;
+      --rule-strong:#39463F;
+      --accent:#71C9A0;
+      --accent-ink:#0C1310;
+      --accent-soft:#182920;
+      --explore:#86BBE0;
+      --explore-soft:#15222C;
+      --gold:#D7A445;
+      --gold-soft:#2A2213;
+      --dot-off:#333F39;
+      --accent-mid:#2E5647;
+      --focus:#71C9A0;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0F1412;
+    --surface:#151C19;
+    --surface-2:#1C2521;
+    --ink:#E6EDE7;
+    --ink-2:#A3B1A8;
+    --ink-3:#7C8A83;
+    --rule:#27322D;
+    --rule-strong:#39463F;
+    --accent:#71C9A0;
+    --accent-ink:#0C1310;
+    --accent-soft:#182920;
+    --explore:#86BBE0;
+    --explore-soft:#15222C;
+    --gold:#D7A445;
+    --gold-soft:#2A2213;
+    --dot-off:#333F39;
+    --accent-mid:#2E5647;
+    --focus:#71C9A0;
+  }
+
+  *{box-sizing:border-box}
+  [hidden]{display:none!important}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+    font-size:17px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1240px;margin:0 auto;padding-inline:24px;padding-block:0 80px}
+  h1,h2,h3,.ui,button,label,legend,summary,.dots{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif}
+  .mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums}
+  a{color:inherit}
+
+  /* ── masthead ───────────────────────────────── */
+  header.top{border-bottom:1px solid var(--rule-strong);padding-block:46px 32px}
+  .kicker{
+    font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink-3);margin:0 0 22px;
+    display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;
+  }
+  .kicker .sep{color:var(--rule-strong)}
+  h1{
+    font-size:clamp(33px,5.2vw,58px);line-height:1.03;letter-spacing:-.027em;
+    font-weight:700;margin:0 0 20px;max-width:20ch;text-wrap:balance;
+  }
+  .deck{margin:0;max-width:62ch;font-size:19px;color:var(--ink-2)}
+  .hero-cols{
+    margin-top:22px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+    gap:44px;align-items:start;
+  }
+  @media (max-width:900px){.hero-cols{grid-template-columns:1fr;gap:28px}}
+  .promises{
+    margin:0;padding:20px 22px;list-style:none;display:grid;gap:10px;
+    font-size:15px;color:var(--ink-2);background:var(--surface);border:1px solid var(--rule);
+  }
+  .promises li{position:relative;padding-left:24px}
+  .promises li::before{
+    content:"";position:absolute;left:2px;top:.62em;width:9px;height:5px;
+    border-left:1.6px solid var(--accent);border-bottom:1.6px solid var(--accent);
+    transform:rotate(-45deg);
+  }
+  .hero-cta{margin-top:30px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .btn.big{font-size:15px;padding:12px 26px;font-weight:600;letter-spacing:-.01em}
+  .hero-note{font-size:14.5px;color:var(--ink-3);max-width:40ch}
+  .stats{
+    margin:36px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:0;
+    border-top:1px solid var(--rule);
+  }
+  .stats > div{
+    padding:14px 26px 0 0;margin-right:26px;border-right:1px solid var(--rule);
+    display:flex;flex-direction:column-reverse;gap:3px;
+  }
+  .stats > div:last-child{border-right:0;margin-right:0}
+  .stats dt{
+    font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.11em;
+    text-transform:uppercase;color:var(--ink-3);
+  }
+  .stats dd{
+    margin:0;font-family:"Bricolage Grotesque",sans-serif;font-size:24px;font-weight:700;
+    letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums;
+  }
+
+  /* ── barre de commande ──────────────────────── */
+  .bar{
+    position:sticky;top:0;z-index:20;background:var(--paper);
+    border-bottom:1px solid var(--rule-strong);margin-inline:-24px;padding-inline:24px;
+  }
+  .bar-in{display:flex;align-items:center;gap:10px 14px;padding-block:9px;flex-wrap:wrap}
+  .progress{height:2px;background:var(--rule);margin-inline:-24px}
+  .progress i{display:block;height:100%;width:0;background:var(--accent);transition:width .25s}
+  .skip{
+    position:absolute;left:-9999px;top:0;z-index:60;background:var(--accent);color:var(--accent-ink);
+    font-family:"Bricolage Grotesque",sans-serif;font-size:14px;padding:10px 16px;text-decoration:none;
+  }
+  .skip:focus{left:12px;top:12px}
+  .bar-brand{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink);background:none;border:0;padding:0;cursor:pointer;white-space:nowrap;
+  }
+  .bar-brand:hover{color:var(--accent)}
+  .bar-sum{
+    font-size:13px;color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    max-width:34ch;border-left:1px solid var(--rule-strong);padding-left:14px;
+  }
+  .bar-sp{flex:1}
+  .btn-mini{
+    font-family:"Bricolage Grotesque",sans-serif;font-size:12.5px;padding:5px 10px;
+    border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink-2);cursor:pointer;white-space:nowrap;
+  }
+  .btn-mini:hover{color:var(--ink);border-color:var(--ink-3)}
+  .btn-mini:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  .btn-mini.strong{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:500}
+  .btn-mini.strong b{font-variant-numeric:tabular-nums}
+  .bar .filters{display:flex;gap:5px;flex-wrap:wrap}
+  .btn-mini.up{display:none;padding:5px 10px;font-family:"IBM Plex Mono",monospace}
+  .bar .search-in{
+    font-family:"Bricolage Grotesque",sans-serif;font-size:12.5px;padding:5px 9px;width:172px;
+    border:1px solid var(--rule);background:var(--surface);color:var(--ink);
+  }
+  .bar .search-in:focus-visible{outline:2px solid var(--focus);outline-offset:-1px}
+  @media (max-width:820px){
+    .bar-sum{display:none}
+    .bar .search-in{width:120px}
+  }
+  @media (max-width:640px){
+    .bar{margin-inline:-18px;padding-inline:18px}
+    .progress{margin-inline:-18px}
+    .bar-brand,.bar-sp{display:none}
+    .bar-in{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:6px}
+    .bar-in::-webkit-scrollbar{display:none}
+    .bar .filters{flex-wrap:nowrap}
+    .bar .chip,.btn-mini{flex:none}
+    .bar .search-in{width:112px;flex:none}
+    .btn-mini.up{display:block}
+  }
+
+  /* ── mode d'emploi ──────────────────────────── */
+  section.howto{padding-block:34px 0;scroll-margin-top:60px}
+  section.howto.closed .howto-body{display:none}
+  ol.howto-steps{
+    margin:20px 0 0;padding:0;list-style:none;display:grid;
+    grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);
+    border:1px solid var(--rule);counter-reset:hw;
+  }
+  ol.howto-steps li{background:var(--surface);padding:18px 18px 20px;counter-increment:hw}
+  ol.howto-steps li::before{
+    content:counter(hw);display:flex;align-items:center;justify-content:center;
+    width:22px;height:22px;background:var(--accent);color:var(--accent-ink);
+    font-family:"IBM Plex Mono",monospace;font-size:11px;margin-bottom:12px;
+  }
+  ol.howto-steps h3{
+    font-family:"Bricolage Grotesque",sans-serif;font-size:16px;font-weight:600;
+    letter-spacing:-.01em;line-height:1.25;margin:0 0 7px;
+  }
+  ol.howto-steps p{margin:0;font-size:15px;color:var(--ink-2)}
+  .k-add{
+    display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;
+    border:1px solid var(--rule-strong);font-family:"IBM Plex Mono",monospace;font-size:12px;
+    color:var(--ink-2);vertical-align:-4px;
+  }
+  .key{
+    margin-top:18px;display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;
+    padding:14px 16px;border:1px solid var(--rule);background:var(--surface);
+  }
+  .key-t{
+    font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--ink-3);
+  }
+  .key-i{display:inline-flex;align-items:center;gap:9px;font-size:14px;color:var(--ink-2)}
+  .k-txt{
+    font-family:"Bricolage Grotesque",sans-serif;font-size:12.5px;color:var(--ink-3);
+    border:1px solid var(--rule);padding:3px 9px;white-space:nowrap;
+  }
+  @media (max-width:900px){ol.howto-steps{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:560px){ol.howto-steps{grid-template-columns:1fr}}
+
+  /* ── profil ─────────────────────────────────── */
+  .profil-sum{display:none;flex-wrap:wrap;gap:6px;margin-top:16px}
+  section.profil.closed .grid{display:none}
+  section.profil.closed .profil-sum{display:flex}
+  .sum-chip{
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;padding:5px 9px;
+    background:var(--surface);border:1px solid var(--rule);color:var(--ink-2);
+  }
+  .sum-chip.on{border-color:var(--accent-mid);color:var(--ink)}
+  .more-head{
+    margin-top:26px;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;
+    padding-top:20px;border-top:1px solid var(--rule);
+  }
+  .btn-more{
+    font-family:"Bricolage Grotesque",sans-serif;font-size:14.5px;font-weight:600;
+    background:none;border:0;padding:0;color:var(--accent);cursor:pointer;
+    display:inline-flex;align-items:center;gap:9px;
+  }
+  .btn-more:hover{text-decoration:underline;text-underline-offset:4px}
+  .btn-more:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+  .chev{
+    width:7px;height:7px;border-right:1.8px solid var(--accent);border-bottom:1.8px solid var(--accent);
+    transform:rotate(45deg);transition:transform .15s;position:relative;top:-2px;
+  }
+  .btn-more[aria-expanded="true"] .chev{transform:rotate(-135deg);top:1px}
+  .more-note{font-size:14px;color:var(--ink-3);max-width:56ch}
+  .grid-more{margin-top:24px}
+  section.profil.closed .more-head{display:none}
+  .block-head{display:flex;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  h2.section{
+    font-family:"Bricolage Grotesque",sans-serif;font-size:14px;font-weight:700;
+    letter-spacing:.15em;text-transform:uppercase;margin:0;
+  }
+  .hint{font-size:14px;color:var(--ink-3);margin:0}
+  section.profil{padding-block:36px 0;scroll-margin-top:60px}
+  .grid{
+    margin-top:24px;display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:24px 32px;align-items:start;
+  }
+  fieldset{border:0;margin:0;padding:0;min-width:0}
+  legend{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.11em;
+    text-transform:uppercase;color:var(--ink-3);padding:0 0 9px;
+  }
+  .opts{display:flex;flex-wrap:wrap;gap:6px}
+  .opts input{position:absolute;opacity:0;width:1px;height:1px}
+  .opts label{
+    display:inline-block;font-family:"Bricolage Grotesque",sans-serif;font-size:13.5px;
+    line-height:1.25;padding:7px 11px;border:1px solid var(--rule);
+    background:var(--surface);color:var(--ink-2);cursor:pointer;
+    transition:background .12s,border-color .12s,color .12s;
+  }
+  .opts label:hover{border-color:var(--rule-strong);color:var(--ink)}
+  .opts input:checked + label{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:500}
+  .opts input:focus-visible + label{outline:2px solid var(--focus);outline-offset:2px}
+
+  /* ── bandeau de synthèse ────────────────────── */
+  .tally{
+    margin-top:34px;border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong);
+    padding-block:18px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 34px;
+  }
+  .fig{display:flex;align-items:baseline;gap:9px}
+  .fig-n{font-family:"Bricolage Grotesque",sans-serif;font-size:28px;font-weight:700;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums}
+  .fig-n.gold{color:var(--gold)}
+  .fig-l{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink-3)}
+  .tally .spacer{flex:1}
+
+  .btn{
+    font-family:"Bricolage Grotesque",sans-serif;font-size:13.5px;padding:8px 14px;
+    border:1px solid var(--rule-strong);background:transparent;color:var(--ink-2);
+    cursor:pointer;text-decoration:none;display:inline-block;
+  }
+  .btn:hover{color:var(--ink);border-color:var(--ink-3)}
+  .btn:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  .btn-solid{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:500}
+  .btn-solid:hover{color:var(--accent-ink);opacity:.9}
+
+  /* ── feuille de route ───────────────────────── */
+  section.route{padding-block:40px 0}
+  ol.route-list{
+    margin:20px 0 0;padding:0;list-style:none;
+    border-top:2px solid var(--ink);
+  }
+  .route-item{
+    display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:6px 18px;
+    padding:18px 2px;border-bottom:1px solid var(--rule);align-items:start;
+  }
+  .route-n{
+    font-family:"Bricolage Grotesque",sans-serif;font-size:26px;font-weight:700;
+    line-height:.9;color:var(--accent-mid);letter-spacing:-.03em;font-variant-numeric:tabular-nums;
+  }
+  .route-t{
+    font-family:"Bricolage Grotesque",sans-serif;font-size:19.5px;font-weight:600;
+    letter-spacing:-.015em;line-height:1.24;
+  }
+  .route-t button{
+    font:inherit;background:none;border:0;padding:0;color:inherit;cursor:pointer;text-align:left;
+  }
+  .route-t button:hover{color:var(--accent)}
+  .route-t button:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+  .route-q{grid-column:2;font-size:16px;color:var(--ink-2);margin:6px 0 0;max-width:60ch;font-style:italic}
+  .route-meta{
+    grid-column:2;display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:8px;
+    font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.07em;
+    text-transform:uppercase;color:var(--ink-3);align-items:center;
+  }
+  .route-side{display:flex;align-items:center;gap:10px;padding-top:4px}
+
+  /* ── carte des rubriques ────────────────────── */
+  section.map{padding-block:40px 0}
+  .tiles{
+    margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);
+    gap:1px;background:var(--rule);border:1px solid var(--rule);
+  }
+  @media (max-width:900px){.tiles{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:520px){.tiles{grid-template-columns:1fr}}
+  a.tile{
+    background:var(--surface);padding:15px 16px 14px;display:flex;flex-direction:column;gap:11px;
+    text-decoration:none;color:inherit;min-height:126px;
+  }
+  a.tile:hover{background:var(--surface-2)}
+  a.tile:focus-visible{outline:2px solid var(--focus);outline-offset:-2px}
+  .tile-top{display:flex;align-items:center;gap:9px}
+  .tile-top svg{width:19px;height:19px;flex:none;color:var(--accent)}
+  .tile-code{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;color:var(--ink-3)}
+  .tile-name{font-family:"Bricolage Grotesque",sans-serif;font-size:15.5px;font-weight:600;line-height:1.2;letter-spacing:-.01em}
+  .tile-foot{margin-top:auto;display:flex;flex-direction:column;gap:8px}
+  .tile-n{display:flex;align-items:baseline;gap:6px}
+  .tile-n b{font-family:"Bricolage Grotesque",sans-serif;font-size:23px;font-weight:700;line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+  .tile-n span{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3)}
+  .tbar{display:flex;gap:2px;height:5px;width:100%}
+  .tbar i{display:block;height:100%}
+  .tbar .p{background:var(--accent)}
+  .tbar .e{background:var(--accent-mid)}
+  .legend{
+    display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:12px;
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);
+  }
+  .legend span{display:inline-flex;align-items:center;gap:7px}
+  .legend i{width:14px;height:5px;display:block}
+
+  /* ── matrice enjeu × effort ─────────────────── */
+  .duo{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:34px;margin-top:44px;align-items:start}
+  .duo > *{min-width:0}
+  .mx-title{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  h3.sub{font-family:"Bricolage Grotesque",sans-serif;font-size:17px;font-weight:700;letter-spacing:-.01em;margin:0}
+  .mx-note{font-size:14px;color:var(--ink-3);margin:6px 0 0;max-width:56ch}
+  .mx-scroll{overflow-x:auto;margin-top:16px}
+  .mx{display:grid;grid-template-columns:62px repeat(3,minmax(88px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);min-width:400px}
+  .mx > *{background:var(--surface)}
+  .mx-h{
+    font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-3);padding:8px 10px;display:flex;align-items:center;
+  }
+  .mx-h.col{justify-content:center}
+  .mx-h.row{align-items:flex-start;padding-top:14px}
+  .cell{padding:11px 11px 12px;display:flex;flex-direction:column;gap:8px;min-height:88px}
+  .cell.q1{background:var(--accent-soft)}
+  .cell b{font-family:"Bricolage Grotesque",sans-serif;font-size:20px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+  .cell.q1 b{color:var(--accent)}
+  .cell.zero b{color:var(--ink-3);opacity:.45}
+  .cell .codes{display:flex;flex-wrap:wrap;gap:3px}
+  .cell .codes button{
+    font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.03em;padding:2px 4px;
+    border:1px solid var(--rule-strong);background:transparent;color:var(--ink-2);cursor:pointer;line-height:1.4;
+  }
+  .cell .codes button:hover{border-color:var(--accent);color:var(--accent)}
+  .cell .codes button:focus-visible{outline:2px solid var(--focus);outline-offset:1px}
+  .cell .tag{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+
+  /* ── échéances ──────────────────────────────── */
+  .dates{margin-top:16px;border-top:2px solid var(--ink)}
+  .date-row{display:grid;grid-template-columns:102px minmax(0,1fr);gap:4px 14px;padding:13px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+  .date-d{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--gold);font-variant-numeric:tabular-nums}
+  .date-t{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;font-weight:600;line-height:1.25}
+  .date-w{grid-column:2;font-size:14px;color:var(--ink-2)}
+  .date-row button{
+    grid-column:2;justify-self:start;margin-top:6px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+    letter-spacing:.06em;padding:4px 8px;border:1px solid var(--rule-strong);background:transparent;color:var(--ink-2);cursor:pointer;
+  }
+  .date-row button:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* ── et maintenant ──────────────────────────── */
+  section.next{margin-top:64px}
+  ol.next-list{
+    margin:22px 0 0;padding:0;list-style:none;display:grid;
+    grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);
+    border:1px solid var(--rule);
+  }
+  ol.next-list li{background:var(--surface);padding:20px 20px 22px;counter-increment:nx}
+  ol.next-list{counter-reset:nx}
+  ol.next-list li::before{
+    content:counter(nx);display:block;font-family:"IBM Plex Mono",monospace;font-size:11px;
+    letter-spacing:.12em;color:var(--accent);margin-bottom:12px;
+  }
+  ol.next-list h3{
+    font-family:"Bricolage Grotesque",sans-serif;font-size:16.5px;font-weight:600;
+    letter-spacing:-.01em;line-height:1.25;margin:0 0 8px;
+  }
+  ol.next-list p{margin:0;font-size:15.5px;color:var(--ink-2)}
+  .next-actions{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-top:22px}
+  @media (max-width:820px){ol.next-list{grid-template-columns:1fr}}
+
+  /* ── signature ──────────────────────────────── */
+  .sign{
+    margin-top:56px;border-top:2px solid var(--ink);padding-top:26px;
+    display:flex;flex-wrap:wrap;gap:18px 40px;align-items:flex-start;justify-content:space-between;
+  }
+  .sign-who{display:flex;flex-direction:column;gap:3px}
+  .sign-role{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
+  .sign-name{font-family:"Bricolage Grotesque",sans-serif;font-size:25px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+  .sign-line{font-size:14.5px;color:var(--ink-2);margin:5px 0 0;max-width:46ch}
+  .sign-meta{
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);
+    display:flex;flex-direction:column;gap:5px;text-align:right;
+  }
+
+  /* ── corps : rail + résultats ───────────────── */
+  .shell{display:grid;grid-template-columns:236px minmax(0,1fr);gap:56px;padding-top:40px;align-items:start}
+  .rail{position:sticky;top:66px}
+  .rail h3{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+    color:var(--ink-3);margin:0 0 12px;font-weight:400;
+  }
+  .rail nav{display:flex;flex-direction:column;border-top:1px solid var(--rule)}
+  .rail nav a{
+    display:flex;align-items:baseline;justify-content:space-between;gap:10px;
+    padding:9px 0;border-bottom:1px solid var(--rule);text-decoration:none;
+    font-family:"Bricolage Grotesque",sans-serif;font-size:14px;color:var(--ink-2);
+  }
+  .rail nav a:hover{color:var(--accent)}
+  .rail nav a.on{color:var(--accent);font-weight:600}
+  .rail nav .n{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-3)}
+  .rail nav .rc{
+    font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.08em;
+    color:var(--ink-3);margin-right:8px;
+  }
+  .rail nav a.on .rc{color:var(--accent)}
+  .chip{
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.03em;
+    padding:5px 9px;border:1px solid var(--rule);background:var(--surface);
+    color:var(--ink-2);cursor:pointer;
+  }
+  .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+  .chip:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  .rail-tools{margin-top:22px;display:flex;flex-wrap:wrap;gap:6px}
+  .rail-tools button{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;padding:5px 9px;
+    border:1px solid var(--rule);background:var(--surface);color:var(--ink-2);cursor:pointer;
+  }
+  .rail-tools button:hover{border-color:var(--ink-3);color:var(--ink)}
+  .rail-tools button:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  .rail-kbd{
+    margin-top:16px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;line-height:1.7;color:var(--ink-3);
+  }
+  .rail-kbd b{
+    font-family:"IBM Plex Mono",monospace;font-weight:500;color:var(--ink-2);
+    border:1px solid var(--rule);padding:1px 4px;background:var(--surface);
+  }
+
+  /* ── rubriques et leviers ───────────────────── */
+  .domain{scroll-margin-top:62px;margin-bottom:14px}
+  .domain + .domain{margin-top:46px}
+  .domain-head{display:flex;align-items:center;gap:12px;padding-bottom:11px;border-bottom:2px solid var(--ink)}
+  .domain-mark{
+    width:34px;height:34px;flex:none;display:flex;align-items:center;justify-content:center;
+    background:var(--accent-soft);color:var(--accent);
+  }
+  .domain-mark svg{width:19px;height:19px}
+  .domain-code{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.1em;color:var(--accent);font-weight:500}
+  .domain-name{font-family:"Bricolage Grotesque",sans-serif;font-size:21px;font-weight:700;letter-spacing:-.015em}
+  .domain-n{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink-3)}
+  .domain-sub{margin:9px 0 0;font-size:15.5px;color:var(--ink-3);max-width:62ch}
+
+  details.lever{border-bottom:1px solid var(--rule);scroll-margin-top:60px}
+  details.lever.flash{background:var(--accent-soft)}
+  details.lever:first-of-type{border-top:0}
+  details.lever summary{
+    list-style:none;cursor:pointer;display:grid;
+    grid-template-columns:66px minmax(0,1fr) auto;gap:5px 18px;align-items:start;
+    padding:17px 2px;
+  }
+  details.lever summary::-webkit-details-marker{display:none}
+  details.lever summary:hover{background:var(--surface)}
+  details.lever summary:hover .l-title{color:var(--accent)}
+  .l-add{
+    font-family:"IBM Plex Mono",monospace;font-size:14px;line-height:1;width:26px;height:26px;
+    border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink-3);
+    cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none;
+  }
+  .l-add:hover{border-color:var(--accent);color:var(--accent)}
+  .l-add:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  .l-add[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+  .l-add.wide{
+    width:auto;height:auto;padding:7px 12px;font-family:"Bricolage Grotesque",sans-serif;
+    font-size:13px;color:var(--ink-2);
+  }
+  .l-add.wide[aria-pressed="true"]{color:var(--accent-ink);font-weight:500}
+  details.lever summary:focus-visible{outline:2px solid var(--focus);outline-offset:-2px}
+  .l-code{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);padding-top:5px;letter-spacing:.02em}
+  .l-title{font-family:"Bricolage Grotesque",sans-serif;font-size:19px;font-weight:600;letter-spacing:-.015em;line-height:1.24}
+  .l-teaser{grid-column:2;font-size:15.5px;color:var(--ink-2);margin-top:4px;max-width:60ch}
+  details.lever[open] .l-title{color:var(--accent)}
+  .l-right{display:flex;align-items:center;gap:12px;padding-top:3px}
+  .dots{display:inline-flex;gap:3px;align-items:center}
+  .dots i{width:6px;height:6px;border-radius:50%;background:var(--dot-off);display:block}
+  .dots i.on{background:var(--accent)}
+  .pill{
+    font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+    padding:4px 8px;white-space:nowrap;
+  }
+  .pill-prio{background:var(--accent-soft);color:var(--accent)}
+  .pill-exp{background:var(--explore-soft);color:var(--explore)}
+  .pill-date{background:var(--gold-soft);color:var(--gold)}
+
+  .body{padding:2px 0 28px 84px;display:grid;gap:16px;max-width:80ch}
+  .meta{
+    display:flex;flex-wrap:wrap;gap:6px 22px;padding-bottom:6px;
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.05em;
+    text-transform:uppercase;color:var(--ink-3);align-items:center;
+  }
+  .meta span{display:inline-flex;align-items:center;gap:7px}
+  .field{display:grid;grid-template-columns:124px minmax(0,1fr);gap:3px 20px}
+  .lab{
+    font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-3);padding-top:5px;
+  }
+  .field p{margin:0;max-width:60ch}
+  .field-gain p{
+    font-family:"Bricolage Grotesque",sans-serif;font-size:16px;line-height:1.42;
+    color:var(--ink);letter-spacing:-.005em;
+  }
+  .field-trap{
+    background:var(--gold-soft);border-left:3px solid var(--gold);
+    padding:13px 16px;margin-left:-16px;
+  }
+  .field-trap .lab{color:var(--gold);padding-top:4px}
+  .field-trap p{color:var(--ink-2)}
+  .field-links p{display:flex;flex-direction:column;gap:7px;align-items:flex-start}
+  .field-links a{
+    font-family:"Bricolage Grotesque",sans-serif;font-size:14.5px;color:var(--accent);
+    text-decoration:none;display:inline-flex;align-items:baseline;gap:9px;flex-wrap:wrap;
+    border-bottom:1px solid var(--accent-mid);padding-bottom:2px;
+  }
+  .field-links a:hover{border-bottom-color:var(--accent)}
+  .field-links a:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+  .field-links a::before{content:"↗";font-family:"IBM Plex Mono",monospace;font-size:12px}
+  .lk-host{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-3);letter-spacing:.02em}
+  .ask{background:var(--accent-soft);border-left:3px solid var(--accent);padding:15px 20px;margin-left:-16px}
+  .ask-lab{
+    display:block;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--accent);margin-bottom:7px;
+  }
+  .ask p{margin:0;font-size:17.5px;color:var(--ink)}
+  .ask em{font-style:normal;font-family:"Bricolage Grotesque",sans-serif;font-weight:500;letter-spacing:-.01em;line-height:1.4}
+  .ask em::before{content:"«\00a0"}
+  .ask em::after{content:"\00a0»"}
+  .add{
+    justify-self:start;font-family:"Bricolage Grotesque",sans-serif;font-size:13px;
+    padding:7px 13px;border:1px solid var(--rule-strong);background:transparent;
+    color:var(--ink-2);cursor:pointer;
+  }
+  .add:hover{border-color:var(--ink-3);color:var(--ink)}
+  .add:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  .add[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+  .row-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .drop{
+    font-family:"Bricolage Grotesque",sans-serif;font-size:13px;padding:7px 13px;
+    border:1px solid transparent;background:transparent;color:var(--ink-3);cursor:pointer;
+  }
+  .drop:hover{color:var(--ink-2);border-color:var(--rule)}
+  .drop:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  .dropped-note{
+    display:flex;align-items:center;gap:10px;font-family:"IBM Plex Mono",monospace;
+    font-size:12px;color:var(--ink-3);
+  }
+  .dropped-note button{
+    font-family:"IBM Plex Mono",monospace;font-size:12px;background:none;border:0;padding:0;
+    color:var(--accent);cursor:pointer;text-decoration:underline;text-underline-offset:3px;
+  }
+  .empty{padding:34px 0;color:var(--ink-3)}
+  .dom-banner{
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:26px;
+    padding:12px 16px;background:var(--accent-soft);color:var(--ink-2);font-size:14.5px;
+  }
+  .dom-banner b{color:var(--accent);font-weight:600}
+  .dom-banner button{
+    margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11.5px;
+    background:none;border:0;padding:0;color:var(--accent);cursor:pointer;
+    text-decoration:underline;text-underline-offset:3px;
+  }
+  .dom-foot{padding:14px 0 0;text-align:right}
+  .dom-foot a{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;
+    color:var(--ink-3);text-decoration:none;
+  }
+  .dom-foot a:hover{color:var(--accent)}
+  .dom-foot a::before{content:"↑  "}
+
+  /* ── liste de questions ─────────────────────── */
+  section.liste{margin-top:64px;background:var(--surface);border:1px solid var(--rule-strong);padding:30px 28px;scroll-margin-top:20px}
+  ol.qs{margin:22px 0 0;padding-left:24px;display:grid;gap:14px;max-width:68ch}
+  ol.qs .q-src{
+    display:block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--ink-3);margin-bottom:2px;
+  }
+  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px;align-items:center}
+  .toast{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--accent);opacity:0;transition:opacity .2s}
+  .toast.on{opacity:1}
+
+  /* ── repères ────────────────────────────────── */
+  section.reperes{margin-top:64px;scroll-margin-top:20px}
+  .tablebox{margin-top:20px;overflow-x:auto;border-top:2px solid var(--ink)}
+  table{border-collapse:collapse;width:100%;min-width:520px;font-size:15.5px}
+  th,td{text-align:left;padding:11px 16px 11px 0;border-bottom:1px solid var(--rule);vertical-align:baseline}
+  th{
+    font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-3);font-weight:400;padding-top:12px;
+  }
+  td.v{font-family:"IBM Plex Mono",monospace;font-size:14.5px;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--ink)}
+  td.k{font-family:"Bricolage Grotesque",sans-serif;font-weight:500;font-size:15.5px}
+  td.n{color:var(--ink-2);font-size:15px}
+
+  footer{margin-top:64px;border-top:1px solid var(--rule-strong);padding-top:26px;font-size:14.5px;color:var(--ink-3);max-width:74ch}
+  footer p{margin:0 0 12px}
+  footer b{color:var(--ink-2);font-weight:600}
+
+  @media (max-width:940px){
+    .duo{grid-template-columns:1fr;gap:36px}
+    .sign{flex-direction:column}
+    .sign-meta{text-align:left}
+    .shell{grid-template-columns:1fr;gap:26px}
+    .rail{position:static}
+    .rail nav{flex-direction:row;flex-wrap:wrap;border-top:0;gap:6px}
+    .rail nav a{border-bottom:0;border:1px solid var(--rule);padding:6px 10px;font-size:13px;background:var(--surface)}
+    .rail h3{margin-bottom:10px}
+    .rail-kbd{display:none}
+  }
+  @media (max-width:640px){
+    body{font-size:16px}
+    .wrap{padding-inline:18px}
+    details.lever summary{grid-template-columns:minmax(0,1fr) auto;gap:4px 12px}
+    .l-code{grid-column:1;padding-top:0}
+    .l-title,.l-teaser{grid-column:1}
+    .l-right{grid-row:1;grid-column:2;flex-direction:column;align-items:flex-end;gap:6px}
+    .body{padding-left:0}
+    .field{grid-template-columns:1fr;gap:1px}
+    .lab{padding-top:0}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+  /* ── impression ─────────────────────────────── */
+  .profil-print{display:none}
+  @media print{
+    :root{
+      --paper:#fff;--surface:#fff;--surface-2:#fff;--ink:#111;--ink-2:#333;--ink-3:#666;
+      --rule:#ccc;--rule-strong:#888;--accent:#1B5540;--accent-soft:#eee;--explore:#333;
+      --explore-soft:#f2f2f2;--gold:#6b4c0c;--gold-soft:#f2f2f2;--dot-off:#ccc;
+    }
+    body{background:#fff;font-size:10.5pt;line-height:1.45}
+    .wrap{max-width:none;padding:0}
+    .rail,.grid,.tally,.promises,.hero-cta,.stats,.actions,.hint,.bar,.profil-sum,
+    .row-actions,.l-add,.more-head,.next-actions,.route-side,
+    section.profil .block-head{display:none!important}
+    section.howto{padding-block:10px 0}
+    section.howto.closed .howto-body{display:block}
+    ol.howto-steps,#fold-howto,section.howto .block-head{display:none!important}
+    .key{border-color:#ccc;background:#fff;page-break-inside:avoid}
+    section.route{padding-block:14px 0}
+    .route-item{page-break-inside:avoid}
+    ol.route-list{page-break-before:avoid}
+    section.next{margin-top:28px;page-break-inside:avoid}
+    ol.next-list{grid-template-columns:repeat(3,1fr);border-color:#bbb}
+    ol.next-list li{padding:12px 14px}
+    section.profil{padding:0}
+    section.liste,section.reperes,.domain,details.lever{scroll-margin-top:0}
+    .shell{display:block;padding-top:0}
+    .profil-print{display:block;font-size:10pt;color:#333;margin-top:10px;max-width:none}
+    header.top{padding-block:0 16px;page-break-after:avoid}
+    h1{font-size:24pt;max-width:none}
+    .deck{font-size:11pt}
+    .date-row button,.cell .codes{display:none}
+    .duo{display:block}
+    .duo > div + div{margin-top:22px}
+    section.map{page-break-after:always;padding-block:18px 0}
+    .tiles{page-break-inside:avoid}
+    a.tile{min-height:0;padding:10px 12px}
+    .tiles{border-color:#bbb}
+    .sign{page-break-inside:avoid}
+    .domain{page-break-inside:auto}
+    .domain-head{page-break-after:avoid}
+    details.lever{page-break-inside:avoid;border-bottom:1px solid #ddd}
+    details.lever summary{padding:9px 0}
+    .l-title{font-size:12.5pt}
+    .l-teaser{font-size:10pt}
+    .body{padding:0 0 12px 0;max-width:none}
+    .field{grid-template-columns:110px 1fr}
+    .ask{border-left:2px solid #1B5540;padding:8px 12px;background:#f6f6f4}
+    section.liste,section.reperes{page-break-before:always;border:0;padding:0;margin-top:0}
+    footer{page-break-inside:avoid}
+    a[href]{text-decoration:none}
+    .field-links a{color:#1B5540;border:0;display:block}
+    .field-links a::after{
+      content:" " attr(href);font-family:"IBM Plex Mono",monospace;font-size:8pt;color:#666;
+      word-break:break-all;
+    }
+    .lk-host{display:none}
+  }
+</style>
+
+</head>
+<body>
+<a class="skip" href="#situation">Aller au questionnaire</a>
+
+<div class="wrap">
+
+<header class="top">
+  <p class="kicker"><span>Préparer son rendez-vous d'expertise comptable</span><span class="sep">/</span><span><span id="n-cat">0</span> leviers cartographiés</span><span class="sep">/</span><span>droit en vigueur au 10 septembre 2026</span></p>
+  <h1>Ce dont vous pourriez parler à votre expert-comptable</h1>
+  <div class="hero-cols">
+    <div>
+      <p class="deck">La plupart des dirigeants découvrent un levier deux ans trop tard, faute d'avoir su qu'il existait. Cette page ne calcule rien et ne décide rien à votre place. Elle vous montre, selon votre situation, les sujets qui méritent une vraie question au prochain rendez-vous, et la formulation exacte de cette question.</p>
+      <div class="hero-cta">
+        <a class="btn btn-solid big" href="#situation" id="start">Commencer</a>
+        <span class="hero-note">Vous repartez avec une liste de questions à poser, prête à envoyer.</span>
+      </div>
+    </div>
+    <ul class="promises">
+      <li>Quatre questions pour démarrer, trois minutes en tout</li>
+      <li>Vos réponses restent dans votre navigateur, rien n'est envoyé nulle part</li>
+      <li>Rien à vendre, aucun partenaire, aucun compte à créer</li>
+      <li>Écrit par un futur expert-comptable, pas par un vendeur de logiciel</li>
+    </ul>
+  </div>
+
+  <dl class="stats">
+    <div><dt>Leviers</dt><dd id="stat-lev">67</dd></div>
+    <div><dt>Rubriques</dt><dd id="stat-dom">9</dd></div>
+    <div><dt>Questions posées</dt><dd id="stat-q">13</dd></div>
+    <div><dt>Édition</dt><dd>09.2026</dd></div>
+  </dl>
+
+  <p class="profil-print" id="profil-print"></p>
+</header>
+
+<div class="bar" id="bar">
+  <div class="bar-in">
+    <button class="bar-brand" id="to-top" type="button">Carnet de leviers</button>
+    <span class="bar-sum" id="bar-sum"></span>
+    <button class="btn-mini" id="edit-profil" type="button">Modifier</button>
+    <span class="bar-sp"></span>
+    <div class="filters" id="filters">
+      <button class="chip" type="button" data-f="tout" aria-pressed="true">Tout</button>
+      <button class="chip" type="button" data-f="prio" aria-pressed="false">Prioritaires</button>
+      <button class="chip" type="button" data-f="date" aria-pressed="false">Échéances</button>
+      <button class="chip" type="button" data-f="enjeu" aria-pressed="false">Fort enjeu</button>
+      <button class="chip" type="button" data-f="liste" aria-pressed="false">Ma liste</button>
+    </div>
+    <input type="search" class="search-in" id="q" placeholder="Chercher…" aria-label="Chercher un levier" autocomplete="off">
+    <button class="btn-mini up" id="to-top-m" type="button" aria-label="Revenir en haut de page">↑</button>
+    <button class="btn-mini strong" id="to-list" type="button">Ma liste <b>0</b></button>
+  </div>
+  <div class="progress" id="progress" title="Leviers déjà retenus ou écartés"><i></i></div>
+</div>
+
+<section class="howto" id="howto" aria-labelledby="h-howto">
+  <div class="block-head">
+    <h2 class="section" id="h-howto">Mode d'emploi</h2>
+    <button class="btn-mini" type="button" id="fold-howto">Masquer</button>
+  </div>
+
+  <div class="howto-body">
+    <ol class="howto-steps">
+      <li>
+        <h3>Décrivez votre situation</h3>
+        <p>Quatre questions juste en dessous. Dix de plus si vous voulez affiner, mais ce n'est pas obligatoire pour commencer.</p>
+      </li>
+      <li>
+        <h3>Lisez les cinq priorités</h3>
+        <p>La page trie les 75 leviers et ne garde que ceux qui vous concernent, puis met en avant les cinq à regarder en premier.</p>
+      </li>
+      <li>
+        <h3>Ouvrez ce qui vous intrigue</h3>
+        <p>Chaque levier s'ouvre d'un clic sur son titre : ce que c'est, l'ordre de grandeur, le piège, la source officielle, la question à poser.</p>
+      </li>
+      <li>
+        <h3>Emportez votre liste</h3>
+        <p>Le bouton <span class="k-add">+</span> range la question dans une liste que vous copiez ou envoyez par e-mail avant votre rendez-vous.</p>
+      </li>
+    </ol>
+
+    <div class="key">
+      <span class="key-t">Ce que vous allez voir</span>
+      <span class="key-i"><span class="pill pill-prio">prioritaire</span>À regarder dès le prochain rendez-vous</span>
+      <span class="key-i"><span class="pill pill-exp">à explorer</span>Utile le jour où le sujet se présente</span>
+      <span class="key-i"><span class="pill pill-date">31.12.2026</span>Une date après laquelle c'est trop tard</span>
+      <span class="key-i"><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i></span>Enjeu et effort, sur trois niveaux</span>
+      <span class="key-i"><span class="k-txt">Ça ne me concerne pas</span>Retire le levier de votre carnet</span>
+    </div>
+  </div>
+</section>
+
+<section class="profil" id="situation" aria-labelledby="h-profil">
+  <div class="block-head">
+    <h2 class="section" id="h-profil">Votre situation</h2>
+    <p class="hint" id="prefill-note">Quatre questions suffisent pour commencer. Les réponses de départ sont celles du cas le plus courant.</p>
+  </div>
+  <div class="profil-sum" id="profil-sum"></div>
+
+  <div id="form">
+  <div class="grid">
+    <fieldset>
+      <legend>Forme et régime</legend>
+      <div class="opts">
+        <input type="radio" name="forme" id="forme-micro" value="micro"><label for="forme-micro">Micro-entreprise</label>
+        <input type="radio" name="forme" id="forme-ir" value="ir"><label for="forme-ir">Entreprise individuelle au réel</label>
+        <input type="radio" name="forme" id="forme-is" value="is" checked><label for="forme-is">Société à l'IS</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Votre statut</legend>
+      <div class="opts">
+        <input type="radio" name="statut" id="statut-tns" value="tns" checked><label for="statut-tns">Gérant majoritaire ou indépendant</label>
+        <input type="radio" name="statut" id="statut-as" value="assimile"><label for="statut-as">Président de SAS, gérant minoritaire</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Résultat annuel avant votre rémunération</legend>
+      <div class="opts">
+        <input type="radio" name="benef" id="b-1" value="bas"><label for="b-1">Moins de 40 k€</label>
+        <input type="radio" name="benef" id="b-2" value="moyen" checked><label for="b-2">40 à 120 k€</label>
+        <input type="radio" name="benef" id="b-3" value="haut"><label for="b-3">120 à 300 k€</label>
+        <input type="radio" name="benef" id="b-4" value="tres"><label for="b-4">Plus de 300 k€</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Salariés</legend>
+      <div class="opts">
+        <input type="radio" name="salaries" id="s-0" value="0"><label for="s-0">Aucun</label>
+        <input type="radio" name="salaries" id="s-1" value="1" checked><label for="s-1">1 à 4</label>
+        <input type="radio" name="salaries" id="s-5" value="5"><label for="s-5">5 à 19</label>
+        <input type="radio" name="salaries" id="s-20" value="20"><label for="s-20">20 et plus</label>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="more-head">
+    <button class="btn-more" type="button" id="toggle-more" aria-expanded="false" aria-controls="more">
+      <span class="chev" aria-hidden="true"></span>Affiner avec dix questions de plus
+    </button>
+    <span class="more-note">Secteur, ancienneté, clients, véhicule, locaux, trésorerie, outils, projets, et ce qui vous préoccupe en ce moment. C'est ce qui fait remonter les leviers vraiment adaptés.</span>
+  </div>
+
+  <div class="grid grid-more" id="more" hidden>
+    <fieldset>
+      <legend>Secteur</legend>
+      <div class="opts">
+        <input type="radio" name="secteur" id="sec-serv" value="services" checked><label for="sec-serv">Services aux entreprises</label>
+        <input type="radio" name="secteur" id="sec-com" value="commerce"><label for="sec-com">Commerce, artisanat</label>
+        <input type="radio" name="secteur" id="sec-bat" value="batiment"><label for="sec-bat">Bâtiment, travaux</label>
+        <input type="radio" name="secteur" id="sec-chr" value="chr"><label for="sec-chr">Restauration, hôtellerie</label>
+        <input type="radio" name="secteur" id="sec-lib" value="liberal"><label for="sec-lib">Profession libérale</label>
+        <input type="radio" name="secteur" id="sec-tech" value="tech"><label for="sec-tech">Tech, industrie</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Ancienneté</legend>
+      <div class="opts">
+        <input type="radio" name="anciennete" id="anc-n" value="neuve"><label for="anc-n">Moins d'un an</label>
+        <input type="radio" name="anciennete" id="anc-j" value="jeune"><label for="anc-j">1 à 3 ans</label>
+        <input type="radio" name="anciennete" id="anc-e" value="etablie" checked><label for="anc-e">Plus de 3 ans</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Vos clients</legend>
+      <div class="opts">
+        <input type="radio" name="clients" id="cl-pro" value="pro" checked><label for="cl-pro">Des entreprises</label>
+        <input type="radio" name="clients" id="cl-part" value="particuliers"><label for="cl-part">Des particuliers</label>
+        <input type="radio" name="clients" id="cl-mix" value="mixte"><label for="cl-mix">Les deux</label>
+        <input type="radio" name="clients" id="cl-pub" value="public"><label for="cl-pub">Le secteur public</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Véhicule utilisé pour l'activité</legend>
+      <div class="opts">
+        <input type="radio" name="vehicule" id="v-0" value="aucun"><label for="v-0">Peu de déplacements</label>
+        <input type="radio" name="vehicule" id="v-p" value="perso" checked><label for="v-p">Le mien, sans rien facturer</label>
+        <input type="radio" name="vehicule" id="v-ik" value="ik"><label for="v-ik">Le mien, avec des kilomètres facturés</label>
+        <input type="radio" name="vehicule" id="v-s" value="societe"><label for="v-s">Un véhicule au bilan ou en location</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Vos locaux</legend>
+      <div class="opts">
+        <input type="radio" name="local" id="loc-d" value="domicile" checked><label for="loc-d">Chez moi</label>
+        <input type="radio" name="local" id="loc-l" value="loue"><label for="loc-l">Loués à un tiers</label>
+        <input type="radio" name="local" id="loc-p" value="proprio"><label for="loc-p">Je possède les murs</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Trésorerie</legend>
+      <div class="opts">
+        <input type="radio" name="treso" id="t-1" value="tendue"><label for="t-1">Tendue</label>
+        <input type="radio" name="treso" id="t-2" value="ok" checked><label for="t-2">Correcte</label>
+        <input type="radio" name="treso" id="t-3" value="excedent"><label for="t-3">Excédent qui dort</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Où en est l'entreprise</legend>
+      <div class="opts">
+        <input type="radio" name="horizon" id="h-1" value="demarrage"><label for="h-1">Je démarre</label>
+        <input type="radio" name="horizon" id="h-2" value="developpement" checked><label for="h-2">Je développe</label>
+        <input type="radio" name="horizon" id="h-3" value="consolidation"><label for="h-3">Je consolide</label>
+        <input type="radio" name="horizon" id="h-4" value="suite"><label for="h-4">Je prépare la suite</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Comment vous gérez aujourd'hui</legend>
+      <div class="opts">
+        <input type="radio" name="outils" id="o-1" value="papier"><label for="o-1">Papier et classeurs</label>
+        <input type="radio" name="outils" id="o-2" value="tableur" checked><label for="o-2">Tableur</label>
+        <input type="radio" name="outils" id="o-3" value="logiciel"><label for="o-3">Un logiciel de facturation</label>
+        <input type="radio" name="outils" id="o-4" value="cabinet"><label for="o-4">Tout part au cabinet</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Ce qui vous préoccupe le plus en ce moment</legend>
+      <div class="opts">
+        <input type="radio" name="souci" id="so-1" value="treso"><label for="so-1">La trésorerie</label>
+        <input type="radio" name="souci" id="so-2" value="impot" checked><label for="so-2">L'impôt et les charges</label>
+        <input type="radio" name="souci" id="so-3" value="temps"><label for="so-3">Le temps que ça me prend</label>
+        <input type="radio" name="souci" id="so-4" value="risques"><label for="so-4">Les risques</label>
+        <input type="radio" name="souci" id="so-5" value="croissance"><label for="so-5">La croissance</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Dans les 12 prochains mois (plusieurs choix)</legend>
+      <div class="opts">
+        <input type="checkbox" name="projet" id="p-mat" value="materiel"><label for="p-mat">Investir en matériel</label>
+        <input type="checkbox" name="projet" id="p-emb" value="embauche"><label for="p-emb">Embaucher</label>
+        <input type="checkbox" name="projet" id="p-rd" value="rd"><label for="p-rd">Développer un produit</label>
+        <input type="checkbox" name="projet" id="p-murs" value="murs"><label for="p-murs">Acheter des locaux</label>
+        <input type="checkbox" name="projet" id="p-tr" value="transmission"><label for="p-tr">Vendre ou transmettre</label>
+      </div>
+    </fieldset>
+  </div>
+  </div>
+
+  <div class="tally" role="status" aria-live="polite">
+    <div class="fig"><span class="fig-n" id="n-total">0</span><span class="fig-l">leviers retenus</span></div>
+    <div class="fig"><span class="fig-n" id="n-prio">0</span><span class="fig-l">prioritaires</span></div>
+    <div class="fig"><span class="fig-n gold" id="n-ech">0</span><span class="fig-l">avec une échéance</span></div>
+    <span class="dropped-note" id="dropped-note" hidden><span id="dropped-n">0</span>&nbsp;écartés<button type="button" id="restore">tout réafficher</button></span>
+    <span class="spacer"></span>
+    <button class="btn" type="button" id="fold-profil">Replier la situation</button>
+    <a class="btn" href="#reperes">Repères 2026</a>
+  </div>
+</section>
+
+<section class="route" aria-labelledby="h-route">
+  <div class="block-head">
+    <h2 class="section" id="h-route">Si vous ne deviez en retenir que cinq</h2>
+    <p class="hint" id="route-hint">Classés par ce qu'ils rapportent, ce qu'ils demandent, et l'urgence de la date.</p>
+  </div>
+  <ol class="route-list" id="route"></ol>
+</section>
+
+<section class="map" aria-labelledby="h-map">
+  <div class="block-head">
+    <h2 class="section" id="h-map">Tout ce qui vous concerne</h2>
+    <p class="hint">Cliquez une rubrique pour y aller directement.</p>
+  </div>
+  <div class="tiles" id="tiles"></div>
+  <div class="legend">
+    <span><i class="p" style="background:var(--accent)"></i>Prioritaires, à regarder dès le prochain rendez-vous</span>
+    <span><i class="e" style="background:var(--accent-mid)"></i>À explorer quand le sujet se présente</span>
+  </div>
+
+  <div class="duo">
+    <div>
+      <div class="mx-title"><h3 class="sub">Enjeu et effort</h3></div>
+      <p class="mx-note">Chaque levier retenu placé selon ce qu'il rapporte et ce qu'il demande. En haut à gauche, ce qui rapporte beaucoup pour peu d'effort.</p>
+      <div class="mx-scroll">
+        <div class="mx" id="mx" role="table" aria-label="Leviers par enjeu et par effort"></div>
+      </div>
+    </div>
+    <div>
+      <div class="mx-title"><h3 class="sub">Ce qui a une échéance</h3></div>
+      <p class="mx-note">Les leviers dont la fenêtre se referme.</p>
+      <div class="dates" id="dates"></div>
+    </div>
+  </div>
+
+</section>
+
+<div class="shell">
+  <aside class="rail">
+    <h3>Rubriques</h3>
+    <nav id="nav" aria-label="Rubriques"></nav>
+    <div class="rail-tools">
+      <button type="button" id="open-all">Tout déplier</button>
+      <button type="button" id="close-all">Tout replier</button>
+    </div>
+    <p class="rail-kbd"><b>/</b> chercher · <b>Échap</b> effacer</p>
+  </aside>
+
+  <main id="results"></main>
+</div>
+
+<section class="liste" id="liste" aria-labelledby="h-liste">
+  <div class="block-head">
+    <h2 class="section" id="h-liste">Ma liste de questions</h2>
+    <p class="hint" id="qs-count">0 question retenue</p>
+  </div>
+  <p class="hint" style="margin-top:8px">Les leviers que vous avez retenus, transformés en questions à poser telles quelles.</p>
+  <ol class="qs" id="qs"></ol>
+  <p class="empty" id="qs-empty">Aucun levier retenu pour l'instant. Ouvrez un levier et cliquez sur «&nbsp;Ajouter à ma liste&nbsp;».</p>
+  <div class="actions">
+    <button class="btn btn-solid" id="copy" type="button">Copier la liste</button>
+    <button class="btn" id="mail" type="button">Préparer un e-mail</button>
+    <button class="btn" id="clear" type="button">Tout retirer</button>
+    <span class="toast" id="toast" role="status">Copié</span>
+  </div>
+</section>
+
+<section class="next" aria-labelledby="h-next">
+  <div class="block-head">
+    <h2 class="section" id="h-next">Et maintenant</h2>
+  </div>
+  <ol class="next-list">
+    <li>
+      <h3>Prenez le rendez-vous avant d'en avoir besoin</h3>
+      <p>Le bon moment se situe deux à trois mois avant votre clôture, quand les arbitrages sont encore possibles. Un rendez-vous demandé la semaine du bilan ne sert plus qu'à constater.</p>
+    </li>
+    <li>
+      <h3>Envoyez vos questions avant la réunion</h3>
+      <p>Un expert-comptable qui reçoit cinq questions précises trois jours avant arrive avec les chiffres. Le même, pris à froid, répondra qu'il va regarder.</p>
+    </li>
+    <li>
+      <h3>Revenez-y une fois par an</h3>
+      <p>Les seuils, les taux et les dates changent chaque exercice, et votre situation aussi. Un levier écarté cette année peut devenir le bon l'année prochaine.</p>
+    </li>
+  </ol>
+  <div class="next-actions">
+    <button class="btn" id="share" type="button" hidden>Copier le lien de cette page</button>
+    <button class="btn" id="reset" type="button">Repartir de zéro</button>
+    <span class="hint">Si cette page vous a servi, elle servira sans doute à un autre dirigeant que vous connaissez.</span>
+  </div>
+</section>
+
+<section class="reperes" id="reperes" aria-labelledby="h-rep">
+  <div class="block-head">
+    <h2 class="section" id="h-rep">Repères 2026</h2>
+    <p class="hint">Les chiffres qui reviennent le plus souvent dans ces discussions.</p>
+  </div>
+  <div class="tablebox">
+    <table>
+      <thead><tr><th scope="col">Dispositif</th><th scope="col">Valeur 2026</th><th scope="col">À retenir</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Prélèvement forfaitaire unique</td><td class="v">31,4 %</td><td class="n">12,8 % d'impôt et 18,6 % de prélèvements sociaux, contre 30 % en 2025</td></tr>
+        <tr><td class="k">Impôt sur les sociétés</td><td class="v">15 % / 25 %</td><td class="n">Taux réduit sur les 42 500 premiers euros, sous conditions de capital et de détention</td></tr>
+        <tr><td class="k">Franchise en base de TVA</td><td class="v">85 000 € / 37 500 €</td><td class="n">Ventes / services. Le seuil unique à 25 000 € a été abandonné en novembre 2025</td></tr>
+        <tr><td class="k">Prime de partage de la valeur</td><td class="v">3 000 € / 6 000 €</td><td class="n">Régime d'exonération totale ouvert jusqu'au 31 décembre 2026 sous 50 salariés</td></tr>
+        <tr><td class="k">Abondement sur un plan d'épargne</td><td class="v">3 845 €</td><td class="n">Par bénéficiaire et par an, dans la limite de 300 % du versement</td></tr>
+        <tr><td class="k">Barème kilométrique, 5 CV</td><td class="v">0,636 €/km</td><td class="n">Jusqu'à 5 000 km. Barème gelé depuis quatre ans, majoré de 20 % en électrique</td></tr>
+        <tr><td class="k">Avantage en nature véhicule</td><td class="v">15 % / 50 % / 67 %</td><td class="n">Achat de moins de 5 ans, location, location avec carburant</td></tr>
+        <tr><td class="k">Repas hors du domicile</td><td class="v">5,50 € à ≈ 16 €</td><td class="n">Valeur du repas à domicile, puis plafond de déduction par repas</td></tr>
+        <tr><td class="k">CESU préfinancé</td><td class="v">2 591 €</td><td class="n">Exonéré par an et par bénéficiaire</td></tr>
+        <tr><td class="k">Retard de paiement</td><td class="v">40 €</td><td class="n">Indemnité forfaitaire de recouvrement, due de plein droit par facture en retard</td></tr>
+        <tr><td class="k">Facturation électronique</td><td class="v">01.09.2026 / 01.09.2027</td><td class="n">Réception obligatoire pour tous, puis émission pour les TPE et PME</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="sign">
+  <div class="sign-who">
+    <span class="sign-role">Conçu et rédigé par</span>
+    <span class="sign-name">Bastien Raffin</span>
+    <p class="sign-line">Document indépendant, sans lien avec un éditeur de logiciel ni avec un prestataire. Il ne remplace pas votre expert-comptable, il vous aide à mieux l'occuper.</p>
+  </div>
+  <div class="sign-meta">
+    <span>Le carnet de leviers</span>
+    <span>Édition de septembre 2026</span>
+    <span id="sign-count">51 leviers · 9 rubriques</span>
+  </div>
+</section>
+
+<footer>
+  <p>Cette page est un support de discussion, pas un conseil personnalisé. Chaque levier dépend de chiffres, de dates et de clauses que seul votre expert-comptable a sous les yeux, et un dispositif intéressant sur le papier peut être défavorable dans votre cas précis.</p>
+  <p>La page s'imprime telle qu'elle est affichée&nbsp;: un Ctrl&nbsp;+&nbsp;P déplie tous les leviers retenus et produit un document propre, questions comprises.</p>
+  <p>Montants et régimes cités&nbsp;: <b>état connu au 10 septembre 2026</b>. Le PFU, le régime de la prime de partage de la valeur et le calendrier de la facturation électronique bougent vite&nbsp;; vérifiez la date avant de vous appuyer sur un chiffre.</p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var DOMAINS = [
+    {code:"RÉM", key:"REM", short:"Rémunération", name:"Rémunération du dirigeant", sub:"Ce que vous sortez de l'entreprise, ce que ça coûte, ce que ça vous ouvre comme droits."},
+    {code:"FRA", key:"FRA", short:"Véhicule et frais", name:"Véhicule, déplacements et frais", sub:"Les dépenses que vous avancez déjà et qui ne remontent pas toujours dans les comptes."},
+    {code:"ÉQU", key:"EQU", short:"Équipe", name:"Équipe et partage de la valeur", sub:"Donner du net à vos salariés sans passer par l'augmentation de salaire."},
+    {code:"AID", key:"AID", short:"Aides et crédits", name:"Aides, crédits d'impôt et zones", sub:"Ce à quoi vous avez droit et que personne ne vous réclame de demander."},
+    {code:"TRÉ", key:"TRE", short:"Trésorerie", name:"Trésorerie et financement", sub:"Le nerf de la guerre en TPE, avant même la question de l'impôt."},
+    {code:"PIL", key:"PIL", short:"Prix et marge", name:"Prix, marge et pilotage", sub:"Les leviers qui rapportent le plus, et dont on parle le moins en rendez-vous comptable."},
+    {code:"OUT", key:"OUT", short:"Outils et données", name:"Outils, données et justificatifs", sub:"Ce que votre comptabilité sait déjà de vous, et ce qui vous fait perdre des heures."},
+    {code:"STR", key:"STR", short:"Structure et murs", name:"Structure, murs et transmission", sub:"Les décisions qui se préparent des années à l'avance, ou pas du tout."},
+    {code:"FIS", key:"FIS", short:"Fiscalité", name:"Fiscalité courante et obligations", sub:"Ce qui se joue à la clôture, et ce qui se joue dans les déclarations."},
+    {code:"RIS", key:"RIS", short:"Risques", name:"Risques et assurances", sub:"Ce qui peut effacer dix ans d'optimisation en un seul événement."}
+  ];
+
+  function has(p,x){ return p.projets.indexOf(x) >= 0; }
+
+  /* marques des rubriques : 20×20, trait 1.6, couleur héritée */
+  var G = {
+    REM:'<path d="M4 3v7a3 3 0 0 0 3 3h6a3 3 0 0 1 3 3v1"/><path d="M16 3v7"/><circle cx="4" cy="16" r="1.6"/>',
+    FRA:'<path d="M3 12h14"/><path d="M12 7l5 5-5 5"/><path d="M3 5h6"/><path d="M3 19h6"/>',
+    EQU:'<circle cx="6" cy="7" r="2.4"/><circle cx="14" cy="7" r="2.4"/><path d="M2.5 16c0-2.2 1.6-3.6 3.5-3.6S9.5 13.8 9.5 16"/><path d="M10.5 16c0-2.2 1.6-3.6 3.5-3.6s3.5 1.4 3.5 3.6"/>',
+    AID:'<rect x="3.5" y="3.5" width="13" height="13"/><path d="M10 7v6"/><path d="M7 10h6"/>',
+    TRE:'<path d="M3 6h11l-2.5-2.5"/><path d="M17 14H6l2.5 2.5"/><path d="M3 10h14"/>',
+    PIL:'<path d="M4 16V11"/><path d="M10 16V7"/><path d="M16 16V3"/><path d="M2 18h16"/>',
+    STR:'<rect x="7.5" y="2.5" width="5" height="5"/><rect x="2.5" y="12.5" width="5" height="5"/><rect x="12.5" y="12.5" width="5" height="5"/><path d="M10 7.5v3M5 12.5v-2h10v2"/>',
+    FIS:'<path d="M4.5 2.5h7l4 4v11h-11z"/><path d="M11.5 2.5v4h4"/><path d="M7 11h6M7 14h4"/>',
+    OUT:'<rect x="2.5" y="3.5" width="15" height="10.5"/><path d="M7 17.5h6M10 14v3.5"/><path d="M5.5 11l2.5-2.5 2 2 4-4"/>',
+    RIS:'<path d="M10 2.5l6 2.2v5.6c0 3.6-2.5 6.4-6 7.2-3.5-.8-6-3.6-6-7.2V4.7z"/>'
+  };
+  function glyph(k){
+    return '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" '
+         + 'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (G[k]||"") + '</svg>';
+  }
+
+  var L = [
+
+  /* ─────────── RÉM ─────────── */
+  {id:"REM-01", dom:"REM", enjeu:3, effort:2, moment:"Avant la clôture",
+   title:"L'arbitrage entre rémunération et dividendes",
+   teaser:"Deux façons de sortir l'argent de la société, deux coûts et deux niveaux de protection sociale.",
+   what:"Ce que la société vous verse peut passer par une rémunération de dirigeant, par des dividendes, ou par un mélange des deux. Le point d'équilibre n'est pas une règle générale : il dépend de votre tranche d'imposition, de vos besoins de trésorerie personnelle et de la retraite que vous voulez vous constituer.",
+   gain:"Souvent quelques milliers d'euros par an, dans un sens comme dans l'autre. C'est aussi le levier où l'on se trompe le plus cher.",
+   ask:"Sur mon niveau de revenu, où se situe le point d'équilibre entre rémunération et dividendes, une fois la retraite et la prévoyance comptées ?",
+   trap:"Le prélèvement forfaitaire unique est passé à 31,4 % au 1er janvier 2026, ce qui a rapproché les deux voies. Et en SARL, la part de dividendes qui dépasse 10 % du capital, des primes d'émission et du compte courant supporte les cotisations sociales du gérant.",
+   when:function(p){ return p.forme==="is" ? (p.benef==="bas"?1:2) : 0; }},
+
+  {id:"REM-02", dom:"REM", enjeu:3, effort:1, moment:"Avant le 31 décembre",
+   title:"La retraite déductible du résultat",
+   teaser:"Un versement sur un plan d'épargne retraite sort du bénéfice imposable au lieu d'y rester.",
+   what:"Les cotisations versées sur un PER, l'ancien cadre Madelin pour les indépendants, se déduisent du résultat dans un plafond calculé sur le bénéfice et sur le plafond annuel de la sécurité sociale. C'est l'un des rares dispositifs qui transforme de l'impôt en épargne à votre nom.",
+   gain:"À 30 % de tranche marginale, 10 000 € versés coûtent environ 7 000 € d'effort réel. Les plafonds non utilisés des années précédentes sont souvent rattrapables.",
+   ask:"Quel est mon plafond de déduction disponible cette année, reliquats compris, et jusqu'à quelle date puis-je verser ?",
+   trap:"L'argent est bloqué jusqu'à la retraite, sauf achat de la résidence principale et accidents de la vie. Et ce qui est déduit à l'entrée redevient imposable à la sortie : l'intérêt tient à l'écart entre votre tranche d'aujourd'hui et celle de demain.",
+   links:[{t:"Épargne retraite : le plafond de déduction", u:"https://www.service-public.fr/particuliers/vosdroits/F34982"}],
+   when:function(p){ return p.benef==="bas" ? 1 : 2; }},
+
+  {id:"REM-03", dom:"REM", enjeu:3, effort:1, moment:"À traiter une fois pour toutes",
+   title:"Ce qui se passe si vous vous arrêtez trois mois",
+   teaser:"Les indemnités journalières d'un indépendant couvrent rarement ses charges fixes.",
+   what:"Un contrat de prévoyance couvre l'arrêt de travail, l'invalidité et le décès. Pour un travailleur indépendant, les cotisations sont déductibles dans un cadre dédié, et le contrat peut aussi financer les frais fixes de l'entreprise pendant l'arrêt.",
+   gain:"Le sujet n'est pas fiscal, il est existentiel : c'est la seule ligne de cette page dont l'absence peut coûter l'entreprise entière.",
+   ask:"Si je m'arrête six mois, qu'est-ce qui tombe exactement, à partir de quel jour, et que faudrait-il ajouter à mon contrat actuel ?",
+   trap:"Le délai de carence et la définition de l'invalidité comptent plus que le montant de la cotisation. Deux contrats au même prix peuvent donner des résultats opposés.",
+   when:function(p){ return p.statut==="tns" ? 2 : 1; }},
+
+  {id:"REM-04", dom:"REM", enjeu:3, effort:2, moment:"Au moment de décider",
+   title:"Rester au micro ou passer au réel",
+   teaser:"L'abattement forfaitaire devient une mauvaise affaire dès que vos charges réelles le dépassent.",
+   what:"Au micro, l'administration retient un pourcentage forfaitaire de charges sur votre chiffre d'affaires, quelle que soit votre réalité. Au réel, vous déduisez ce que vous dépensez vraiment : loyer, matériel, véhicule, cotisations retraite, honoraires, intérêts d'emprunt.",
+   gain:"Dès que vos charges réelles dépassent l'abattement, l'écart se compte en milliers d'euros de base imposable, chaque année.",
+   ask:"Compte tenu de mes charges réelles de l'an dernier, à partir de quel niveau le réel devient-il plus favorable que le micro dans mon activité ?",
+   trap:"Le passage au réel amène une comptabilité complète, des obligations déclaratives et souvent la TVA. La bonne question n'est pas seulement l'impôt, c'est aussi le temps que ça vous prend.",
+   when:function(p){ return p.forme==="micro" ? 2 : 0; }},
+
+  {id:"REM-05", dom:"REM", enjeu:2, effort:2, moment:"À régulariser vite",
+   title:"Le conjoint qui travaille dans l'entreprise",
+   teaser:"S'il participe régulièrement à l'activité, un statut est obligatoire, et il ouvre des droits.",
+   what:"Trois statuts existent : conjoint salarié, conjoint collaborateur, conjoint associé. Le choix détermine sa protection sociale, ses droits à la retraite et la déductibilité de ce qui lui est versé.",
+   gain:"Un conjoint sans statut pendant dix ans, ce sont dix ans de retraite perdus et une situation fragile en cas de séparation ou de décès.",
+   ask:"Mon conjoint participe à l'activité : quel statut est le plus adapté, et qu'est-ce que ça change pour sa retraite et pour mon résultat ?",
+   trap:"Le statut de conjoint collaborateur est limité à cinq ans. Au-delà, le basculement vers un autre statut n'a rien d'automatique, il faut le préparer.",
+   when:function(p){ return 1; }},
+
+  {id:"REM-06", dom:"REM", enjeu:2, effort:1, moment:"À mettre en place une fois",
+   title:"Le bureau chez vous, facturé à l'entreprise",
+   teaser:"Vous hébergez le siège gratuitement alors que la société pourrait vous verser un loyer.",
+   what:"Quand l'activité s'exerce à votre domicile, la société peut vous verser une redevance d'occupation pour la surface utilisée, ou prendre en charge une quote-part des charges. Le loyer est déductible pour elle et devient un revenu foncier pour vous. Un entrepreneur individuel au réel peut déduire une quote-part de loyer, d'électricité, d'assurance et de taxe foncière.",
+   gain:"Sur 15 m² dans un logement de 75 m², la quote-part atteint souvent 1 500 à 3 000 € de charges par an.",
+   ask:"Quelle quote-part puis-je retenir pour mon bureau à domicile, sous quelle forme, et faut-il une convention écrite entre la société et moi ?",
+   trap:"La quote-part doit correspondre à une surface réellement dédiée, mesurable. Et le loyer perçu se déclare : sans déclaration, le redressement porte sur les deux côtés.",
+   when:function(p){ return p.local==="domicile" ? 2 : 0; }},
+
+  {id:"REM-07", dom:"REM", enjeu:2, effort:1, moment:"Une fois, puis tous les cinq ans",
+   title:"Votre relevé de carrière, avant toute décision de retraite",
+   teaser:"Les trimestres d'un indépendant sont mal reportés plus souvent qu'on ne le croit.",
+   what:"Le relevé de carrière récapitule tous les trimestres et points acquis depuis votre premier emploi. Les périodes d'activité indépendante, les débuts d'entreprise et les changements de caisse sont les endroits où des trimestres disparaissent. La correction se demande, avec des justificatifs, et elle est beaucoup plus simple des années avant le départ.",
+   gain:"Un trimestre manquant retrouvé vaut, sur vingt ans de retraite, bien plus que la plupart des économies d'impôt de cette page.",
+   ask:"Comment je récupère mon relevé de carrière, et pouvez-vous m'aider à repérer les périodes qui manquent ?",
+   trap:"Le rachat de trimestres est parfois présenté comme une évidence fiscale. Il n'est rentable que dans certaines configurations d'âge et de revenu : ça se calcule avant, pas après le versement.",
+   links:[{t:"Votre relevé de carrière, tous régimes", u:"https://www.info-retraite.fr/"}],
+   when:function(p){ return 1; }},
+
+  {id:"REM-08", dom:"REM", enjeu:3, effort:2, moment:"Deux ans avant l'échéance",
+   title:"Continuer à travailler après la retraite",
+   teaser:"Retraite progressive ou cumul emploi-retraite : deux régimes différents, deux calculs.",
+   what:"La retraite progressive permet de liquider une partie de sa pension tout en réduisant son activité. Le cumul emploi-retraite permet de reprendre une activité après liquidation, avec ou sans nouveaux droits selon les cas. Pour un dirigeant, l'un et l'autre se combinent avec la cession progressive de l'entreprise.",
+   gain:"Une transition sur trois ans plutôt qu'un arrêt brutal, et une pension qui commence à tomber pendant que l'entreprise se transmet.",
+   ask:"Entre retraite progressive et cumul emploi-retraite, qu'est-ce qui correspond à mon calendrier, et quel effet sur mes cotisations ?",
+   trap:"La liquidation de la pension fige des droits. Reprendre une activité ensuite ne les augmente pas toujours : l'ordre des opérations change le résultat final.",
+   links:[{t:"Retraite progressive et cumul emploi-retraite", u:"https://www.info-retraite.fr/"}],
+   when:function(p){ return p.horizon === "suite" ? 2 : 0; }},
+
+  /* ─────────── FRA ─────────── */
+  {id:"FRA-01", dom:"FRA", enjeu:2, effort:1, moment:"À mettre en place tout de suite",
+   title:"Le barème kilométrique",
+   teaser:"Vous roulez pour l'entreprise avec votre voiture personnelle sans rien vous faire rembourser.",
+   what:"Le barème forfaitaire couvre le carburant, l'entretien, l'assurance et la dépréciation. L'entreprise vous rembourse un montant calculé sur les kilomètres professionnels réels, et ce remboursement est une charge déductible qui ne supporte ni impôt ni cotisations chez vous.",
+   gain:"Pour 12 000 km professionnels avec une 5 CV, environ 4 700 € remboursés sans charges. Un véhicule électrique bénéficie d'une majoration de 20 %.",
+   ask:"Quel kilométrage professionnel puis-je justifier, et quel document de suivi attendez-vous en cas de contrôle ?",
+   trap:"Le barème n'a pas été revalorisé en 2026, pour la quatrième année consécutive, alors que les coûts réels ont grimpé. Et le trajet domicile-travail n'est pris en compte que dans certaines limites de distance.",
+   links:[{t:"Simuler vos frais kilométriques", u:"https://www.impots.gouv.fr/simulateur-bareme-kilometrique"}, {t:"Le barème, année par année", u:"https://www.economie.gouv.fr/particuliers/impots-et-fiscalite/gerer-mon-impot-sur-le-revenu/impot-sur-le-revenu-tout-savoir-sur-le-bareme-des-frais-kilometriques"}],
+   when:function(p){ if(p.vehicule==="perso") return 2; if(p.vehicule==="ik") return 1; return 0; }},
+
+  {id:"FRA-02", dom:"FRA", enjeu:3, effort:2, moment:"Avant de signer",
+   title:"Le véhicule dans l'entreprise, vraiment ?",
+   teaser:"Mettre la voiture au bilan paraît évident. Les chiffres disent souvent le contraire.",
+   what:"Un véhicule inscrit à l'actif ou pris en location donne des charges déductibles, mais il déclenche l'avantage en nature pour la part privée, deux taxes annuelles liées aux émissions, un amortissement plafonné selon le CO2 et une TVA rarement récupérable sur une voiture particulière.",
+   gain:"L'écart avec le barème kilométrique se joue au niveau du kilométrage : en dessous d'environ 15 000 km par an, le barème l'emporte souvent.",
+   ask:"Sur mon kilométrage et le modèle que je vise, comparez-moi le coût net d'un véhicule au bilan, d'une location longue durée et du barème kilométrique.",
+   trap:"Le barème de l'avantage en nature a été fortement relevé en 2025 : 15 % du coût d'achat pour un véhicule de moins de cinq ans, 50 % du coût annuel pour un véhicule loué, 67 % si l'entreprise paie le carburant. Beaucoup de montages calculés avant sont devenus perdants.",
+   links:[{t:"Barèmes des avantages en nature", u:"https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html"}],
+   when:function(p){ if(p.vehicule==="societe") return 2; if(p.vehicule==="ik"||p.vehicule==="perso") return 1; return 0; }},
+
+  {id:"FRA-03", dom:"FRA", enjeu:2, effort:1, moment:"Avant de choisir le modèle",
+   title:"L'électrique et la borne de recharge",
+   teaser:"Le cas où le véhicule de fonction reste nettement avantageux.",
+   what:"Les véhicules électriques qui respectent le score environnemental ouvrent droit à un abattement de 70 % sur l'avantage en nature, dans une limite annuelle d'environ 4 600 €. L'électricité de recharge et l'installation d'une borne suivent des règles plus favorables que le carburant.",
+   gain:"L'abattement peut ramener l'avantage en nature à quelques dizaines d'euros par mois pour le dirigeant ou le salarié.",
+   ask:"Le modèle que j'envisage est-il éligible à l'abattement, et comment traiter la borne installée à mon domicile ?",
+   trap:"L'éligibilité dépend d'un score environnemental qui exclut une partie des modèles importés, et la liste évolue. Vérifiez avant de signer, pas après.",
+   links:[{t:"Barèmes des avantages en nature", u:"https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html"}],
+   when:function(p){ if(p.vehicule==="societe") return 2; if(p.vehicule==="ik"||p.vehicule==="perso") return 1; return 0; }},
+
+  {id:"FRA-04", dom:"FRA", enjeu:1, effort:1, moment:"Dès le prochain repas",
+   title:"Les repas pris hors de chez soi",
+   teaser:"Une charge quotidienne que beaucoup d'indépendants oublient de déduire.",
+   what:"Quand l'éloignement du domicile vous empêche de rentrer déjeuner, le surcoût du repas est déductible. On retire du prix payé la valeur d'un repas pris à domicile, 5,50 € en 2026, et la différence est déductible jusqu'à un plafond situé autour de 16 € par repas.",
+   gain:"Environ 10 € par jour travaillé, soit près de 2 000 € de charges sur une année pleine.",
+   ask:"Quelles pièces gardez-vous pour justifier mes repas, et est-ce que mon organisation de travail rend l'éloignement défendable ?",
+   trap:"Il faut une justification par l'éloignement, pas seulement une note de restaurant. Un déjeuner à deux cents mètres du bureau ne passe pas.",
+   when:function(p){ if(p.forme==="micro") return 0; return p.statut==="tns" ? 2 : 1; }},
+
+  {id:"FRA-05", dom:"FRA", enjeu:1, effort:1, moment:"À formaliser avant de verser",
+   title:"Le forfait mobilités durables",
+   teaser:"Vélo, covoiturage, trottinette : une prise en charge exonérée que presque personne ne met en place.",
+   what:"L'employeur peut prendre en charge tout ou partie des trajets domicile-travail effectués autrement qu'en voiture individuelle. La somme est exonérée de cotisations et d'impôt dans une limite annuelle par salarié fixée par la loi.",
+   gain:"Du pouvoir d'achat net donné au salarié sans charges, pour un coût employeur égal au montant versé.",
+   ask:"Quel est le plafond exonéré cette année, et que faut-il écrire dans une décision unilatérale pour le mettre en place proprement ?",
+   trap:"La mise en place demande un accord ou une décision unilatérale, et un justificatif annuel du salarié. Versé sans formalisme, le forfait se requalifie en salaire.",
+   when:function(p){ return p.salaries==="0" ? 0 : 1; }},
+
+  {id:"FRA-06", dom:"FRA", enjeu:1, effort:1, moment:"Avant les fêtes",
+   title:"Cadeaux clients et frais de représentation",
+   teaser:"Déductibles, oui, mais la TVA suit une règle à part que presque tout le monde rate.",
+   what:"Les cadeaux d'affaires sont déductibles s'ils relèvent d'une gestion normale et restent proportionnés au chiffre d'affaires. La TVA, elle, n'est récupérable que si la valeur du cadeau reste sous un plafond annuel par bénéficiaire. Au-delà d'un certain montant global, un relevé détaillé doit accompagner la déclaration de résultats.",
+   gain:"Modeste en euros, mais c'est un redressement fréquent sur des sommes déjà dépensées.",
+   ask:"Quel plafond de TVA sur les cadeaux s'applique cette année, et à partir de quel montant global dois-je remplir le relevé des frais généraux ?",
+   trap:"Un cadeau offert au dirigeant d'une société cliente est nominatif : c'est le bénéficiaire réel qui compte pour le plafond, pas l'entreprise cliente.",
+   when:function(p){ return p.clients==="particuliers" ? 0 : 1; }},
+
+  /* ─────────── ÉQU ─────────── */
+  {id:"EQU-01", dom:"EQU", enjeu:3, effort:1, moment:"Avant le 31 décembre", echeance:"31.12.2026",
+   title:"La prime de partage de la valeur, tant qu'elle existe",
+   teaser:"Le régime d'exonération le plus large s'arrête le 31 décembre 2026.",
+   what:"La PPV permet de verser jusqu'à 3 000 € par salarié et par an, 6 000 € si l'entreprise a un accord d'intéressement ou de participation. Jusqu'au 31 décembre 2026, dans les entreprises de moins de 50 salariés, la prime versée aux salariés rémunérés sous trois SMIC est exonérée de cotisations, de CSG-CRDS et d'impôt sur le revenu.",
+   gain:"1 000 € de prime coûtent 1 000 € à l'entreprise et arrivent entiers chez le salarié, là où 1 000 € de salaire net en coûtent près du double.",
+   ask:"Avant le 31 décembre, sur quel montant de PPV puis-je aller sans dégrader mes allègements de charges, et faut-il une décision unilatérale ou un accord ?",
+   trap:"Depuis 2026, la prime entre dans l'assiette qui sert à calculer la réduction générale de cotisations. Sur des salaires proches du SMIC, la perte d'allègement peut dépasser l'économie : le calcul se fait avant le versement. À partir de 2027, la prime redevient imposable et soumise à CSG-CRDS, sauf placement sur un plan d'épargne.",
+   links:[{t:"Prime de partage de la valeur", u:"https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/prime-partage-valeur.html"}],
+   when:function(p){ return p.salaries==="0" ? 0 : 2; }},
+
+  {id:"EQU-02", dom:"EQU", enjeu:3, effort:2, moment:"3 à 4 mois de mise en place",
+   title:"Intéressement, plan d'épargne et abondement",
+   teaser:"Le dirigeant d'une petite entreprise en profite aussi, dès lors qu'il a au moins un salarié.",
+   what:"Un plan d'épargne entreprise permet à la société d'abonder les versements des bénéficiaires, jusqu'à 300 % du versement et environ 3 845 € par personne et par an. Dans les entreprises de moins de 50 salariés, le forfait social a été supprimé sur ces sommes.",
+   gain:"L'abondement est une charge déductible qui n'est ni du salaire ni un dividende, et le dirigeant d'une entreprise de 1 à 249 salariés y a accès au même titre que ses salariés.",
+   ask:"Avec mon effectif, que coûte réellement un PEE avec abondement, et puis-je y verser à titre personnel dès cette année ?",
+   trap:"L'abondement doit suivre une règle identique pour tous : impossible de servir uniquement le dirigeant. Et les sommes sont bloquées cinq ans, sauf cas de déblocage prévus.",
+   when:function(p){ if(p.salaries==="0") return 0; return (p.salaries==="5"||p.salaries==="20") ? 2 : 1; }},
+
+  {id:"EQU-03", dom:"EQU", enjeu:2, effort:1, moment:"À arbitrer avant l'augmentation",
+   title:"Titres-restaurant, CESU, chèques cadeaux",
+   teaser:"Des périphériques de rémunération qui passent avant l'augmentation de salaire.",
+   what:"Titres-restaurant, CESU préfinancés exonérés jusqu'à 2 591 € par an et par bénéficiaire, chèques-cadeaux liés à des événements précis : chaque dispositif a son plafond et ses conditions, et chacun donne du net au salarié sans passer par les cotisations.",
+   gain:"Plusieurs centaines d'euros nets par salarié et par an, pour un coût employeur inférieur à une prime équivalente.",
+   ask:"Compte tenu de mon effectif, quelle combinaison de périphériques donne le plus de net par euro dépensé ?",
+   trap:"Les chèques-cadeaux ne sont exonérés que rattachés à des événements limitativement listés, et sous un plafond par événement. Distribués librement en fin d'année, ils sont du salaire.",
+   when:function(p){ if(p.salaries!=="0") return 1; return p.statut==="assimile" ? 1 : 0; }},
+
+  {id:"EQU-04", dom:"EQU", enjeu:2, effort:2, moment:"Avant de publier l'annonce",
+   title:"Recruter en alternance plutôt qu'en direct",
+   teaser:"Si une embauche est prévue, la question du contrat se pose avant celle du profil.",
+   what:"Un contrat d'apprentissage ou de professionnalisation ouvre droit à une aide forfaitaire la première année, dont le montant dépend de la taille de l'entreprise, et à un régime de cotisations allégé. Le coût de la formation est pris en charge par l'opérateur de compétences.",
+   gain:"La première année, un alternant revient souvent à la moitié d'un salarié classique de niveau équivalent.",
+   ask:"Sur le poste que je veux pourvoir, comparez-moi un CDI, un apprenti et un contrat de professionnalisation, aides comprises.",
+   trap:"Les montants d'aide ont été revus à la baisse et changent d'une année sur l'autre. Faites confirmer le montant applicable à la date de signature, pas celui lu l'an dernier.",
+   when:function(p){ if(has(p,"embauche")) return 2; return p.salaries==="0" ? 0 : 1; }},
+
+  {id:"EQU-05", dom:"EQU", enjeu:3, effort:1, moment:"À vérifier ce trimestre", echeance:"exercice 2026",
+   title:"Le paramétrage de la paie a changé en 2026",
+   teaser:"Les allègements de cotisations ont été refondus cette année.",
+   what:"La réduction générale de cotisations a été unifiée en 2026 : les anciens taux réduits maladie et famille ont été absorbés dans un dispositif dégressif unique. Le coût réel de chaque salarié et l'effet de toute prime sur les allègements en sont modifiés.",
+   gain:"Une erreur de paramétrage sur cinq salariés se chiffre en milliers d'euros par an, dans un sens comme dans l'autre.",
+   ask:"Pouvez-vous me confirmer que mes bulletins appliquent la nouvelle réduction générale, et me montrer le coût employeur réel de chaque poste ?",
+   trap:"Une régularisation d'allègement se rattrape sur l'année, mais elle tombe d'un coup. Mieux vaut la détecter en cours d'exercice qu'en janvier.",
+   when:function(p){ return p.salaries==="0" ? 0 : 2; }},
+
+  {id:"EQU-06", dom:"EQU", enjeu:2, effort:1, moment:"Dès la prochaine paie",
+   title:"Les heures supplémentaires plutôt qu'un poste de plus",
+   teaser:"Régime allégé côté salarié comme côté employeur, et sans engagement durable.",
+   what:"Les heures supplémentaires bénéficient d'une réduction de cotisations salariales et d'une exonération d'impôt sur le revenu plafonnée à 7 500 € nets par an. L'employeur bénéficie d'une déduction forfaitaire de cotisations patronales par heure, plus favorable dans les petites entreprises.",
+   gain:"Sur une activité en pointe saisonnière, c'est le moyen le moins coûteux d'augmenter la capacité sans créer un poste permanent.",
+   ask:"Quel est le montant exact de la déduction forfaitaire dans mon effectif, et jusqu'où puis-je aller sans dépasser les durées maximales de travail ?",
+   trap:"Le contingent annuel, les durées maximales et le repos compensateur restent opposables. Et depuis un arrêt de septembre 2025, les congés payés comptent dans le calcul du seuil hebdomadaire : les semaines de congé peuvent déclencher des majorations.",
+   when:function(p){ if(p.salaries==="0") return 0; return (p.secteur==="chr"||p.secteur==="batiment"||p.secteur==="commerce") ? 2 : 1; }},
+
+  {id:"EQU-07", dom:"EQU", enjeu:2, effort:2, moment:"Avant de renoncer à recruter",
+   title:"Étoffer l'équipe sans embaucher",
+   teaser:"Groupement d'employeurs, temps partagé, sous-traitance encadrée.",
+   what:"Un groupement d'employeurs permet de partager un salarié entre plusieurs entreprises du même bassin, chacune payant sa quote-part. Le travail à temps partagé et la sous-traitance encadrée répondent au même besoin quand le poste ne justifie pas un temps plein.",
+   gain:"Accès à une compétence qualifiée à un tiers ou une moitié de poste, sans porter seul le risque de l'embauche.",
+   ask:"Existe-t-il un groupement d'employeurs dans mon secteur, et quelles précautions prendre pour que la sous-traitance ne soit pas requalifiée ?",
+   trap:"Une sous-traitance exclusive, sur vos horaires et avec votre matériel, se requalifie en contrat de travail. Le redressement porte alors sur toute la période.",
+   when:function(p){ if(has(p,"embauche")) return 2; return (p.salaries==="0"||p.salaries==="1") ? 1 : 0; }},
+
+  {id:"EQU-08", dom:"EQU", enjeu:2, effort:1, moment:"À la date d'échéance du contrat",
+   title:"La complémentaire santé de vos salariés",
+   teaser:"Obligatoire, financée pour moitié au moins par vous, et rarement renégociée.",
+   what:"Tout employeur doit proposer une complémentaire santé collective et en financer au moins la moitié. Le contrat doit être responsable pour conserver son régime social favorable. Comme il se reconduit tacitement, beaucoup d'entreprises paient depuis des années un tarif qui a dérivé.",
+   gain:"Sur cinq salariés, une remise en concurrence fait souvent gagner 15 à 25 % de la cotisation, à garanties égales.",
+   ask:"Quand mon contrat santé arrive-t-il à échéance, mon acte de mise en place est-il à jour, et vaut-il la peine de remettre en concurrence ?",
+   trap:"Un acte de mise en place absent ou obsolète, une dispense d'affiliation mal formalisée, et l'URSSAF réintègre la part patronale dans l'assiette des cotisations sur trois ans.",
+   when:function(p){ if(p.salaries === "0") return 0; return has(p,"embauche") ? 2 : 1; }},
+
+  {id:"EQU-09", dom:"EQU", enjeu:2, effort:2, moment:"Avant le prochain recrutement",
+   title:"Emploi et handicap : l'obligation et les aides",
+   teaser:"À partir de 20 salariés c'est une obligation, en dessous c'est une source d'aides ignorée.",
+   what:"Les entreprises d'au moins 20 salariés doivent employer 6 % de travailleurs handicapés ou verser une contribution. Quelle que soit la taille, l'Agefiph finance l'aménagement d'un poste, une aide au maintien dans l'emploi et une partie du coût d'un recrutement.",
+   gain:"Une contribution qui devient un recrutement aidé, et un aménagement de poste financé plutôt que porté par l'entreprise.",
+   ask:"Suis-je assujetti à l'obligation d'emploi, et quelles aides puis-je mobiliser pour un poste aménagé ?",
+   trap:"La contribution se déclare en DSN et se calcule sur un effectif moyen annuel. Un franchissement de seuil non anticipé se découvre au moment de la régularisation.",
+   links:[{t:"Aides à l'emploi et au maintien dans l'emploi", u:"https://www.agefiph.fr/"}],
+   when:function(p){ if(p.salaries === "20") return 2; return p.salaries === "0" ? 0 : 1; }},
+
+  {id:"EQU-10", dom:"EQU", enjeu:1, effort:1, moment:"Campagne annuelle au printemps",
+   title:"Le solde de la taxe d'apprentissage, que vous pouvez flécher",
+   teaser:"0,09 % de votre masse salariale part vers une école. Vous choisissez laquelle, ou personne ne le fait pour vous.",
+   what:"Le solde de la taxe d'apprentissage représente 0,09 % de la masse salariale. Il se déclare en DSN, puis s'affecte sur la plateforme SOLTéA à l'établissement de formation de votre choix pendant une campagne annuelle. Sans affectation de votre part, la somme est répartie selon une clé nationale.",
+   gain:"Le montant est modeste, mais c'est de l'argent déjà payé que vous pouvez diriger vers l'école qui forme vos futurs collaborateurs.",
+   ask:"Quel est mon montant de solde cette année, et à quelle date faut-il l'avoir affecté sur SOLTéA ?",
+   trap:"La campagne d'affectation dure quelques semaines. Passé la clôture, le choix vous échappe pour l'année entière.",
+   links:[{t:"Affecter son solde sur SOLTéA", u:"https://entreprendre.service-public.gouv.fr/actualites/A18267"}],
+   when:function(p){ return p.salaries === "0" ? 0 : 1; }},
+
+  /* ─────────── AID ─────────── */
+  {id:"AID-01", dom:"AID", enjeu:3, effort:3, moment:"Avant de lancer le projet",
+   title:"Crédit d'impôt recherche et innovation",
+   teaser:"Le crédit innovation vise les prototypes et les nouveaux produits, pas seulement les laboratoires.",
+   what:"Le crédit d'impôt recherche couvre 30 % des dépenses de recherche. Le crédit d'impôt innovation, réservé aux PME, couvre 20 % des dépenses de conception de prototypes et d'installations pilotes de produits nouveaux. Salaires, amortissements et prestations sous-traitées à des organismes agréés entrent dans l'assiette.",
+   gain:"Sur un projet à 60 000 € de dépenses éligibles, le crédit innovation représente 12 000 € restitués, même en l'absence d'impôt à payer.",
+   ask:"Mon projet entre-t-il dans l'assiette du CII, et vaut-il la peine de demander un rescrit à l'administration avant de commencer ?",
+   trap:"L'éligibilité se joue sur le caractère nouveau du produit, pas sur l'effort commercial. Un dossier technique daté, tenu au fil du projet, est ce qui fait la différence en cas de contrôle.",
+   links:[{t:"Le crédit d'impôt recherche", u:"https://www.economie.gouv.fr/entreprises/credit-impot-recherche"}, {t:"Le crédit d'impôt innovation", u:"https://entreprendre.service-public.gouv.fr/vosdroits/F35494"}],
+   when:function(p){ if(has(p,"rd")) return 2; return p.secteur==="tech" ? 1 : 0; }},
+
+  {id:"AID-02", dom:"AID", enjeu:3, effort:2, moment:"Se vérifie dès l'implantation",
+   title:"Les exonérations liées à votre commune",
+   teaser:"Près de 18 000 communes ouvrent droit à une exonération d'impôt sur les bénéfices et de CFE.",
+   what:"Les zones France ruralités revitalisation ont remplacé les ZRR depuis juillet 2024. Une entreprise créée ou reprise dans une de ces communes peut être exonérée d'impôt sur les bénéfices pendant cinq ans, puis de façon dégressive trois ans, avec une exonération de CFE en parallèle. D'autres zonages existent en quartier prioritaire.",
+   gain:"Cinq années de bénéfice exonérées, dans la limite du plafond européen des aides de minimis.",
+   ask:"Ma commune est-elle classée, et ma situation coche-t-elle les conditions d'activité, d'effectif et de date de création ?",
+   trap:"Le dispositif vise les créations et les reprises, pas les entreprises déjà en place, et le régime micro en est exclu dans le cas général. La condition d'implantation réelle de l'activité, pas seulement du siège, est contrôlée.",
+   links:[{t:"Exonérations de cotisations en zone de revitalisation", u:"https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-zonees/zone-revitalisation-rurale-zrr.html"}, {t:"S'implanter : les aides liées au territoire", u:"https://www.economie.gouv.fr/entreprises/trouver-des-aides-et-des-financements/les-aides-limplantation-geographique/simplanter-0"}],
+   when:function(p){ return (p.anciennete==="neuve"||p.anciennete==="jeune") ? 2 : 1; }},
+
+  {id:"AID-03", dom:"AID", enjeu:2, effort:1, moment:"Les 12 premiers mois",
+   title:"Les aides du début d'activité",
+   teaser:"Exonération partielle de cotisations, prêts d'honneur, accompagnement : ça se demande, ça ne s'accorde pas seul.",
+   what:"L'ACRE allège les cotisations la première année d'activité sous condition de revenu. À côté, les réseaux d'accompagnement accordent des prêts d'honneur sans intérêt ni garantie, qui servent de levier auprès de la banque, et les régions financent souvent l'amorçage.",
+   gain:"Un prêt d'honneur de 10 000 € débloque en général trois à cinq fois ce montant en financement bancaire.",
+   ask:"Quelles aides puis-je encore demander compte tenu de ma date de création, et quels dossiers faut-il déposer avant quelle date ?",
+   trap:"La plupart de ces aides se demandent avant ou juste après le démarrage. Passé le délai, elles sont définitivement perdues, sans possibilité de rattrapage.",
+   links:[{t:"Aides et prêts d'honneur à la création", u:"https://bpifrance-creation.fr/"}],
+   when:function(p){ if(p.anciennete==="neuve") return 2; return p.anciennete==="jeune" ? 1 : 0; }},
+
+  {id:"AID-04", dom:"AID", enjeu:2, effort:2, moment:"Avant de payer la formation",
+   title:"Faire financer la formation par votre OPCO",
+   teaser:"Vous cotisez à la formation professionnelle tous les ans. Vous en récupérez rarement quelque chose.",
+   what:"Chaque entreprise verse une contribution à la formation professionnelle. L'opérateur de compétences de la branche finance en retour des parcours pour les salariés, et parfois pour le dirigeant selon les fonds concernés. Les petites entreprises ont des enveloppes dédiées, souvent sous-consommées.",
+   gain:"Plusieurs milliers d'euros de formation pris en charge, pour une contribution déjà payée.",
+   ask:"Quel est mon OPCO, quelles enveloppes sont ouvertes cette année pour une entreprise de ma taille, et qui monte le dossier ?",
+   trap:"La demande doit être déposée avant le début de la formation. Une facture déjà réglée n'est presque jamais prise en charge rétroactivement.",
+   when:function(p){ if(p.salaries==="0") return 0; return has(p,"embauche") ? 2 : 1; }},
+
+  {id:"AID-05", dom:"AID", enjeu:1, effort:1, moment:"Avant la clôture",
+   title:"Le mécénat d'entreprise",
+   teaser:"60 % du don en réduction d'impôt, et un excédent reportable cinq ans.",
+   what:"Les dons à des organismes d'intérêt général ouvrent droit à une réduction d'impôt de 60 % du montant versé, dans une limite annuelle exprimée en pourcentage du chiffre d'affaires ou en montant fixe. Le mécénat de compétences et les dons en nature sont admis.",
+   gain:"Un don de 5 000 € revient à 2 000 € après réduction, avec une contrepartie de communication possible dans une limite encadrée.",
+   ask:"Compte tenu de mon résultat prévisionnel, quel montant de mécénat est absorbable cette année sans perdre l'excédent ?",
+   trap:"L'organisme doit être éligible et le reçu fiscal est obligatoire. Une contrepartie trop visible requalifie le don en parrainage, qui suit un régime différent.",
+   when:function(p){ if(p.treso==="excedent") return 1; return (p.benef==="haut"||p.benef==="tres") ? 1 : 0; }},
+
+  {id:"AID-06", dom:"AID", enjeu:2, effort:2, moment:"Avant de mettre en place la garde",
+   title:"Le crédit d'impôt famille",
+   teaser:"La moitié de ce que vous dépensez pour la garde des enfants de vos salariés revient en impôt.",
+   what:"Le crédit d'impôt famille couvre 50 % des dépenses de crèche ou de halte-garderie engagées pour les enfants de moins de trois ans de vos salariés, et 25 % des aides versées sous forme de CESU préfinancés, dans la limite d'un plafond annuel élevé. Le dirigeant peut en bénéficier dès lors que l'aide est ouverte à tout le personnel selon les mêmes critères.",
+   gain:"Une place en crèche d'entreprise à 8 000 € revient à 4 000 € après crédit d'impôt, et elle règle un vrai problème de fidélisation.",
+   ask:"Entre la place en crèche et les CESU préfinancés, qu'est-ce qui rapporte le plus dans ma situation, et quels formulaires faut-il joindre ?",
+   trap:"Le dispositif est réservé aux régimes réels et l'aide doit bénéficier à l'ensemble des salariés selon des critères identiques. Une aide réservée au dirigeant est refusée.",
+   links:[{t:"Crédit d'impôt famille", u:"https://www.economie.gouv.fr/entreprises/gerer-ses-ressources-humaines-et-ses-salaries/credit-dimpot-famille-beneficiez-dun-avantage-fiscal-en-participant-aux-frais-de-garde-des"}],
+   when:function(p){ if(p.forme === "micro" || p.salaries === "0") return 0; return 1; }},
+
+  {id:"AID-07", dom:"AID", enjeu:2, effort:2, moment:"Avant de signer le devis",
+   title:"Faire financer les travaux d'économie d'énergie",
+   teaser:"Les primes se demandent avant la signature du devis, jamais après.",
+   what:"Les certificats d'économie d'énergie obligent les fournisseurs d'énergie à financer une partie des travaux qui réduisent la consommation : éclairage, isolation, chauffage, régulation, froid commercial. Les locaux professionnels y ont droit, en propriété comme en location, et des aides régionales s'y ajoutent souvent.",
+   gain:"Sur un relamping ou une isolation de toiture, la prime couvre couramment 10 à 30 % du chantier.",
+   ask:"Sur les travaux que j'envisage, quelles primes sont mobilisables, et dans quel ordre faut-il signer les documents ?",
+   trap:"Le dossier de prime doit être accepté avant l'acceptation du devis. Un devis signé trop tôt annule le droit à la prime, sans rattrapage possible.",
+   when:function(p){ if(has(p,"murs")) return 2; return p.local === "domicile" ? 0 : 1; }},
+
+  /* ─────────── TRÉ ─────────── */
+  {id:"TRE-01", dom:"TRE", enjeu:3, effort:1, moment:"Dès la prochaine facture",
+   title:"Le délai de paiement que vous accordez sans le savoir",
+   teaser:"Chaque mois de retard client est un crédit gratuit que vous accordez.",
+   what:"La loi plafonne les délais convenus à 60 jours à compter de la facture, ou 45 jours fin de mois. Toute facture réglée en retard ouvre droit de plein droit à des pénalités et à une indemnité forfaitaire de recouvrement de 40 €, à condition que vos conditions générales et vos factures le mentionnent.",
+   gain:"Réduire de 15 jours le délai moyen d'encaissement sur 300 000 € de chiffre d'affaires libère environ 12 000 € de trésorerie, définitivement.",
+   ask:"Quel est mon délai moyen d'encaissement réel, et mes conditions générales contiennent-elles les mentions qui me permettent de réclamer les pénalités ?",
+   trap:"Beaucoup de dirigeants n'appliquent jamais les pénalités par peur de froisser un client. Les mentionner sur la facture change déjà le comportement de paiement, sans avoir à les réclamer.",
+   links:[{t:"Délais de paiement : les règles à connaître", u:"https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/delais-de-paiement-les-regles-connaitre"}],
+   when:function(p){ if(p.clients==="particuliers") return 0; return p.treso==="tendue" ? 2 : (p.clients==="public" ? 2 : 1); }},
+
+  {id:"TRE-02", dom:"TRE", enjeu:3, effort:2, moment:"À revoir sur les prochains devis",
+   title:"Encaisser plus tôt : acompte, échéancier, abonnement",
+   teaser:"La façon dont vous facturez pèse plus sur la trésorerie que la façon dont vous vendez.",
+   what:"Demander un acompte à la commande, découper une mission longue en échéances mensuelles, basculer une prestation récurrente en abonnement prélevé : trois manières de rapprocher l'encaissement du travail fourni, sans toucher au prix.",
+   gain:"Un acompte de 30 % sur des chantiers de 20 000 € finance l'achat des matières sans découvert bancaire.",
+   ask:"Sur mon cycle d'activité, quel séquencement de facturation supprimerait mon besoin de trésorerie de début de mission ?",
+   trap:"L'acompte encaissé rend la TVA exigible pour les prestations de services. Facturer plus tôt sans anticiper la TVA déplace le problème d'un cran.",
+   when:function(p){ if(p.treso==="tendue") return 2; return (p.secteur==="batiment"||p.secteur==="services") ? 2 : 1; }},
+
+  {id:"TRE-03", dom:"TRE", enjeu:2, effort:2, moment:"Avant le découvert",
+   title:"Financer le poste client sans emprunter",
+   teaser:"Affacturage, escompte, cession Dailly : trois façons de transformer une facture en trésorerie.",
+   what:"L'affacturage cède vos factures à un organisme qui les règle sous quelques jours. L'escompte et la cession Dailly mobilisent les créances auprès de la banque. Chaque formule a un coût, exprimé en commission et en frais de dossier, et une exigence de qualité du poste client.",
+   gain:"Un financement souvent moins cher qu'un découvert autorisé, et qui grandit avec l'activité au lieu de la plafonner.",
+   ask:"Sur mon volume et mon type de clients, quelle solution de mobilisation du poste client est la moins chère, tout compris ?",
+   trap:"L'affacturage se paie en commission mais aussi en relation client : c'est le factor qui relance. Vérifiez si la formule est confidentielle ou non avant de signer.",
+   when:function(p){ if(p.clients==="particuliers") return 0; return p.treso==="tendue" ? 2 : 1; }},
+
+  {id:"TRE-04", dom:"TRE", enjeu:2, effort:1, moment:"Cette semaine",
+   title:"La trésorerie qui dort sur le compte courant",
+   teaser:"Un excédent laissé sur le compte professionnel ne rapporte rien et perd de la valeur.",
+   what:"Comptes à terme, comptes rémunérés, supports de trésorerie d'entreprise : plusieurs placements acceptent des durées courtes avec une disponibilité négociée. Le choix se fait sur l'horizon dont vous êtes sûr, pas sur le rendement affiché.",
+   gain:"Sur 100 000 € placés une année, l'écart entre un compte courant et un placement court terme se chiffre en milliers d'euros.",
+   ask:"Quelle part de ma trésorerie est structurellement immobilisée, et sur quel horizon puis-je la placer sans risquer un découvert ?",
+   trap:"Bloquer une trésorerie qui sert au décalage de TVA ou aux échéances sociales coûte plus cher en pénalités de retard que ce que rapporte le placement.",
+   when:function(p){ if(p.treso==="excedent") return 2; return p.treso==="ok" ? 1 : 0; }},
+
+  {id:"TRE-05", dom:"TRE", enjeu:3, effort:1, moment:"Avant l'échéance, jamais après",
+   title:"Demander un délai avant d'être en retard",
+   teaser:"Un étalement demandé à temps se négocie. Un impayé constaté se recouvre.",
+   what:"L'URSSAF et l'administration fiscale accordent des délais de paiement quand la demande arrive avant l'échéance et s'accompagne d'un plan crédible. La commission des chefs de services financiers coordonne un échéancier global quand plusieurs dettes s'accumulent.",
+   gain:"Un échéancier obtenu évite la majoration, l'inscription de privilège et le blocage bancaire qui suit.",
+   ask:"Si je vois venir une échéance que je ne pourrai pas honorer, à qui je m'adresse, avec quels documents, et combien de jours avant ?",
+   trap:"Le silence est le pire choix. L'inscription du privilège du Trésor ou de l'URSSAF est publique, et elle ferme l'accès au crédit bien plus durablement que la dette elle-même.",
+   links:[{t:"Demander un délai de paiement à l'Urssaf", u:"https://www.urssaf.fr/"}],
+   when:function(p){ return p.treso==="tendue" ? 2 : 0; }},
+
+  {id:"TRE-06", dom:"TRE", enjeu:2, effort:2, moment:"Avant de signer le bon de commande",
+   title:"Acheter, emprunter ou louer votre matériel",
+   teaser:"Le même équipement ne produit pas le même résultat selon la façon dont il est financé.",
+   what:"À l'achat, le matériel entre à l'actif et se déduit par amortissement sur plusieurs années. En crédit-bail ou en location, les loyers sont déductibles immédiatement et rien n'apparaît au bilan, ce qui préserve la capacité d'emprunt mais coûte plus cher au total.",
+   gain:"Le choix déplace le résultat imposable d'un exercice à l'autre : utile quand une année est exceptionnellement bonne, coûteux quand elle ne l'est pas.",
+   ask:"Sur cet investissement, comparez-moi l'achat au comptant, le crédit et le crédit-bail, en trésorerie et en résultat sur cinq ans.",
+   trap:"C'est la date de mise en service, pas la date de commande, qui déclenche l'amortissement. Un matériel livré après la clôture ne produit aucun effet sur l'exercice.",
+   when:function(p){ if(has(p,"materiel")) return 2; return p.treso==="tendue" ? 1 : 0; }},
+
+  {id:"TRE-07", dom:"TRE", enjeu:2, effort:1, moment:"À formaliser une fois",
+   title:"L'argent que vous avez prêté à votre société",
+   teaser:"Un compte courant d'associé peut être rémunéré, et les intérêts sont déductibles.",
+   what:"Quand vous laissez de l'argent personnel dans la société, ce compte courant peut porter intérêt. Les intérêts sont déductibles du résultat dans la limite d'un taux publié chaque trimestre, et ils vous reviennent comme revenus de capitaux mobiliers.",
+   gain:"Sur un compte courant de 50 000 €, quelques milliers d'euros d'intérêts déductibles par an, et une trésorerie personnelle récupérable sans fiscalité de distribution.",
+   ask:"Quel est le solde de mon compte courant, quel taux puis-je appliquer cette année, et faut-il une convention écrite ?",
+   trap:"La déduction suppose un capital entièrement libéré. Et le compte courant débiteur, la société qui vous prête de l'argent dans l'autre sens, est interdit dans la plupart des formes de sociétés.",
+   when:function(p){ if(p.forme!=="is") return 0; return p.treso==="tendue" ? 2 : 1; }},
+
+  {id:"TRE-08", dom:"TRE", enjeu:3, effort:2, moment:"Dès le premier retard",
+   title:"Recouvrer un impayé sans passer par un avocat",
+   teaser:"Trois étapes, dont deux qui ne coûtent presque rien.",
+   what:"La relance écrite, puis la mise en demeure en recommandé, règlent la majorité des retards. Ensuite, l'injonction de payer se demande au tribunal par simple requête, sans avocat et pour un coût modique. Pour les petites créances, une procédure simplifiée passe directement par un commissaire de justice.",
+   gain:"Une créance de 6 000 € récupérée, c'est souvent plusieurs mois de résultat sur un dossier client.",
+   ask:"Sur cette créance, quelle procédure est adaptée, quel est le délai de prescription, et que faut-il avoir gardé comme preuves ?",
+   trap:"La prescription commerciale court plus vite qu'on ne l'imagine, et un devis non signé complique tout. La preuve de la commande vaut plus que la facture elle-même.",
+   when:function(p){ if(p.clients === "particuliers") return 1; return p.treso === "tendue" ? 2 : 1; }},
+
+  {id:"TRE-09", dom:"TRE", enjeu:2, effort:1, moment:"Une revue par an",
+   title:"Les frais bancaires et les commissions d'encaissement",
+   teaser:"Ligne par ligne, c'est souvent le poste de charges le moins regardé de l'entreprise.",
+   what:"Convention de compte, commissions de mouvement, frais de tenue, location du terminal de paiement, commission sur chaque encaissement par carte : tout se négocie, et tout se compare. Les acteurs alternatifs ont fait bouger les tarifs des banques traditionnelles, y compris pour les clients en place.",
+   gain:"Pour un commerce qui encaisse 200 000 € par carte, un demi-point de commission représente 1 000 € par an.",
+   ask:"Pouvez-vous m'éditer le total de mes frais bancaires et de mes commissions de l'année dernière, toutes lignes confondues ?",
+   trap:"Le taux affiché sur les encaissements par carte cache souvent des frais fixes par transaction. Sur des petits paniers, ce sont eux qui coûtent le plus cher.",
+   when:function(p){ return (p.secteur === "commerce" || p.secteur === "chr") ? 2 : 1; }},
+
+  {id:"TRE-10", dom:"TRE", enjeu:3, effort:1, moment:"À tenir chaque semaine",
+   title:"Le prévisionnel de trésorerie à treize semaines",
+   teaser:"Un tableau d'une page qui dit à quelle date vous manquerez d'argent.",
+   what:"Treize semaines, c'est l'horizon sur lequel on connaît à peu près tout : les factures à encaisser, les échéances sociales et fiscales, les salaires, les loyers, les remboursements d'emprunt. Le tableau montre la semaine où le solde passe sous zéro, ce qui laisse le temps d'agir.",
+   gain:"Voir un trou six semaines à l'avance permet de le combler par une relance. Le voir la veille coûte un découvert et une négociation en position de faiblesse.",
+   ask:"Pouvez-vous m'aider à monter un prévisionnel de trésorerie à treize semaines, et me dire ce que j'y oublie systématiquement ?",
+   trap:"Les échéances qui plombent sont toujours les mêmes et toujours oubliées : TVA, acomptes d'IS, solde de cotisations, prime de fin d'année.",
+   when:function(p){ return p.treso === "tendue" ? 2 : 1; }},
+
+  /* ─────────── PIL ─────────── */
+  {id:"PIL-01", dom:"PIL", enjeu:3, effort:2, moment:"À installer une fois pour toutes",
+   title:"Votre marge, client par client",
+   teaser:"Le levier le plus rentable de cette page, et le moins souvent abordé en rendez-vous comptable.",
+   what:"Un résultat global positif cache presque toujours des prestations ou des clients qui perdent de l'argent. Répartir le chiffre d'affaires et les coûts directs par ligne d'activité fait apparaître ce que la moyenne dissimule, et ça se construit à partir de la comptabilité que vous payez déjà.",
+   gain:"Réaffecter le temps passé sur les 20 % de clients les moins rentables vaut souvent plus que tous les leviers fiscaux de cette page réunis.",
+   ask:"Peut-on mettre en place un suivi analytique simple, par type de prestation ou par client, à partir de ma comptabilité existante ?",
+   trap:"Une analytique trop détaillée n'est jamais tenue. Trois ou quatre axes suffisent, à condition d'être renseignés à chaque saisie.",
+   when:function(p){ return (p.benef==="bas"||p.treso==="tendue") ? 2 : 2; }},
+
+  {id:"PIL-02", dom:"PIL", enjeu:3, effort:1, moment:"À calculer maintenant",
+   title:"Le chiffre d'affaires en dessous duquel vous perdez de l'argent",
+   teaser:"Votre point mort mensuel, en un chiffre que vous devriez connaître par cœur.",
+   what:"Le seuil de rentabilité est le niveau d'activité qui couvre exactement les charges fixes. Rapporté au mois, il donne un repère immédiat : au-delà, chaque euro de marge tombe dans le résultat ; en dessous, chaque jour creuse.",
+   gain:"C'est le chiffre qui permet de dire oui ou non à un devis en trente secondes, sans rappeler son comptable.",
+   ask:"Quel est mon point mort mensuel cette année, et comment il bouge si j'embauche ou si je prends un local plus grand ?",
+   trap:"Un point mort calculé une fois et jamais mis à jour devient faux dès la première charge fixe ajoutée. Il se recalcule à chaque changement de structure.",
+   when:function(p){ return 2; }},
+
+  {id:"PIL-03", dom:"PIL", enjeu:3, effort:1, moment:"À la prochaine révision tarifaire",
+   title:"Réviser vos prix, et l'écrire dans le contrat",
+   teaser:"Une hausse de 5 % du prix vaut souvent plus qu'une baisse de 5 % des charges.",
+   what:"Sur un contrat récurrent, une clause d'indexation ou de révision annuelle évite la négociation frontale chaque année. Sur du devis, l'exercice consiste à vérifier que le prix couvre le temps réellement passé, pas celui prévu à l'époque où le tarif a été fixé.",
+   gain:"Avec 25 % de marge, augmenter les prix de 5 % augmente le résultat de 20 % sans un client de plus.",
+   ask:"Sur mes contrats récurrents, quelle clause d'indexation puis-je introduire, et sur quel indice ?",
+   trap:"Une clause d'indexation mal rédigée, adossée à un indice inadapté ou à sens unique, peut être écartée par le juge. L'indice retenu doit avoir un lien avec l'activité.",
+   when:function(p){ return 2; }},
+
+  {id:"PIL-04", dom:"PIL", enjeu:2, effort:2, moment:"Une réunion par trimestre",
+   title:"Un point trimestriel plutôt qu'un bilan annuel",
+   teaser:"Le bilan arrive six mois après les décisions qu'il aurait dû éclairer.",
+   what:"Une situation intermédiaire trimestrielle, même simplifiée, donne le résultat, la trésorerie prévisionnelle et l'impôt à venir alors qu'il reste du temps pour agir. C'est aussi ce qui permet d'arbitrer une prime, un investissement ou une distribution en connaissance de cause.",
+   gain:"La différence entre subir un impôt et le décider. Sur une bonne année, l'écart se compte en milliers d'euros.",
+   ask:"Que coûte une situation trimestrielle, et quels trois indicateurs suivriez-vous en priorité dans mon activité ?",
+   trap:"Une situation intermédiaire non retraitée des charges à payer et des stocks donne un résultat faux, souvent trop beau. Faites préciser ce qui est estimé.",
+   when:function(p){ return (p.benef==="bas") ? 1 : 2; }},
+
+  {id:"PIL-05", dom:"PIL", enjeu:3, effort:2, moment:"À l'inventaire, puis chaque trimestre",
+   title:"L'argent qui dort dans le stock",
+   teaser:"Un stock, c'est de la trésorerie transformée en étagères.",
+   what:"La rotation du stock indique combien de fois il se renouvelle dans l'année. Les références qui n'ont pas bougé depuis douze mois immobilisent de l'argent, occupent de la place et perdent de la valeur. Elles peuvent aussi être dépréciées comptablement, ce qui allège le résultat imposable.",
+   gain:"Écouler 15 % d'un stock de 80 000 €, c'est 12 000 € de trésorerie récupérés sans emprunter un centime.",
+   ask:"Quelles références n'ont pas tourné depuis un an, et quelle dépréciation puis-je justifier à la clôture ?",
+   trap:"Une dépréciation de stock doit reposer sur une valeur de revente réellement inférieure, démontrable. Appliquée forfaitairement, elle est réintégrée.",
+   when:function(p){ return (p.secteur === "commerce" || p.secteur === "chr" || p.secteur === "batiment") ? 2 : 0; }},
+
+  {id:"PIL-06", dom:"PIL", enjeu:2, effort:1, moment:"Dès la prochaine facture",
+   title:"L'escompte pour paiement comptant",
+   teaser:"Un ou deux pour cent offerts valent souvent mieux qu'un découvert.",
+   what:"Accorder une remise au client qui paie immédiatement transforme un délai de paiement en trésorerie disponible. La comparaison se fait avec ce que coûte réellement le financement de ce délai : découvert, affacturage, ou simplement le stress du mois.",
+   gain:"2 % accordés sur 30 jours gagnés reviennent à un financement à environ 24 % par an. C'est cher si vous n'avez pas besoin de l'argent, très bon marché si vous en avez besoin.",
+   ask:"Au vu de mon coût de financement réel, jusqu'à quel taux d'escompte ai-je intérêt à aller ?",
+   trap:"L'escompte doit apparaître sur la facture et suit un traitement précis en TVA. Accordé après coup par un simple geste commercial, il complique la comptabilité et la déclaration.",
+   when:function(p){ if(p.clients === "particuliers") return 0; return p.treso === "tendue" ? 2 : 1; }},
+
+  /* ─────────── OUT ─────────── */
+  {id:"OUT-01", dom:"OUT", enjeu:2, effort:2, moment:"Au changement d'exercice",
+   title:"Sortir du tableur",
+   teaser:"Un outil relié à votre banque supprime la ressaisie et vous donne le résultat en cours d'année.",
+   what:"Un logiciel de facturation connecté au compte bancaire rapproche seul les encaissements et les factures. Le chiffre d'affaires est à jour en permanence, les relances partent toutes seules, et le cabinet reçoit une comptabilité déjà propre au lieu d'une boîte de documents.",
+   gain:"Quelques heures par mois récupérées, et surtout un résultat connu en cours d'exercice au lieu de six mois après la clôture.",
+   ask:"Quels outils sont compatibles avec les vôtres, et qu'est-ce que ça change sur votre honoraire si je passe à l'un d'eux ?",
+   trap:"Changer d'outil en cours d'exercice complique la reprise de l'historique. La bonne fenêtre, c'est la clôture.",
+   when:function(p){ if(p.outils === "cabinet") return 1; return (p.outils === "logiciel") ? 1 : 2; }},
+
+  {id:"OUT-02", dom:"OUT", enjeu:2, effort:1, moment:"À caler une fois",
+   title:"Les justificatifs en photo plutôt qu'en boîte à chaussures",
+   teaser:"La copie numérique d'une facture papier a la même valeur que l'original, sous conditions.",
+   what:"La numérisation des pièces est admise à condition de respecter des règles précises de fidélité et de conservation. Les pièces comptables se conservent dix ans. Un ticket de carburant photographié le jour même vaut mieux qu'un ticket thermique illisible six mois plus tard.",
+   gain:"La TVA récupérée sur toutes les petites dépenses qu'on ne retrouvait jamais, et la fin de la corvée de fin d'exercice.",
+   ask:"Quelle procédure de numérisation acceptez-vous, et qu'est-ce que je dois encore conserver en papier ?",
+   trap:"Une photo prise n'importe comment ne constitue pas un archivage à valeur probante. Les conditions techniques sont précises, et c'est en contrôle qu'on s'en aperçoit.",
+   when:function(p){ if(p.forme === "micro") return 1; return p.outils === "papier" ? 2 : 1; }},
+
+  {id:"OUT-03", dom:"OUT", enjeu:2, effort:1, moment:"Dès le prochain devis",
+   title:"Faire signer les devis électroniquement",
+   teaser:"Un devis signé en ligne se retourne le jour même, pas la semaine suivante.",
+   what:"La signature électronique a la même valeur juridique qu'une signature manuscrite dès lors que le procédé identifie le signataire et garantit l'intégrité du document. Le devis part par e-mail, revient signé et horodaté, et l'acompte peut être réglé dans la foulée.",
+   gain:"Des jours gagnés sur chaque cycle de vente, et une preuve de commande incontestable le jour où le client conteste.",
+   ask:"Quel outil de signature me conseillez-vous, et quelle valeur probante a-t-il en cas de litige ?",
+   trap:"Une signature scannée collée dans un PDF n'est pas une signature électronique. En cas de contestation, elle ne prouve rien.",
+   when:function(p){ if(p.secteur === "batiment") return 2; return p.clients === "particuliers" ? 1 : 1; }},
+
+  {id:"OUT-04", dom:"OUT", enjeu:3, effort:1, moment:"Cette semaine",
+   title:"Vos données survivraient-elles au vol de votre ordinateur ?",
+   teaser:"Dix ans de comptabilité sur un seul disque, c'est une seule panne.",
+   what:"La règle tient en trois chiffres : trois copies, sur deux supports différents, dont une hors des locaux. S'y ajoutent des mots de passe qui ne se ressemblent pas et une double authentification sur la banque et la messagerie, qui sont les deux portes d'entrée des attaques.",
+   gain:"L'obligation de conservation de dix ans ne disparaît pas parce que le disque a lâché. La reconstitution, elle, se facture cher.",
+   ask:"Où sont mes données comptables, qui y a accès, et que se passe-t-il concrètement si je perds tout demain ?",
+   trap:"Une sauvegarde jamais testée n'est pas une sauvegarde. On s'en rend compte le jour où on essaie de restaurer.",
+   links:[{t:"Réagir à une attaque ou une fraude", u:"https://www.cybermalveillance.gouv.fr/"}],
+   when:function(p){ return p.outils === "cabinet" ? 1 : 2; }},
+
+  {id:"OUT-05", dom:"OUT", enjeu:3, effort:1, moment:"À demander au prochain rendez-vous",
+   title:"Les chiffres que vous avez déjà et que personne ne regarde",
+   teaser:"Votre comptabilité contient des réponses que vous n'avez jamais demandées.",
+   what:"Sans travail supplémentaire, les écritures de l'année contiennent déjà la saisonnalité de votre activité, le délai réel d'encaissement de chaque client, le poids de chaque poste de charges et son évolution sur trois ans. Ce sont des tableaux, pas des études.",
+   gain:"Vous payez déjà pour la saisie de ces données. Les faire parler ne coûte que la demande.",
+   ask:"Quels tableaux pouvez-vous sortir de ma comptabilité sans travail supplémentaire, et à quelle fréquence ?",
+   trap:"Un tableau reçu et jamais ouvert ne sert à rien. Mieux vaut en demander deux et les regarder que dix et les archiver.",
+   when:function(p){ return 2; }},
+
+  /* ─────────── STR ─────────── */
+  {id:"STR-01", dom:"STR", enjeu:3, effort:3, moment:"Avant d'acheter",
+   title:"Séparer les murs de l'exploitation",
+   teaser:"Détenir vos locaux à titre personnel ou via une société civile, et facturer un loyer à l'entreprise.",
+   what:"Les murs sont détenus hors de la société d'exploitation, souvent par une SCI. L'entreprise paie un loyer déductible de son résultat ; le loyer devient un revenu foncier pour vous. Le patrimoine immobilier se construit à part, à l'abri des risques de l'exploitation.",
+   gain:"Le loyer sort du résultat imposé à l'IS et alimente un patrimoine qui reste à vous le jour où l'entreprise est vendue.",
+   ask:"Dans ma situation, la SCI est-elle le bon véhicule, à l'impôt sur le revenu ou à l'IS, et quel loyer est défendable ?",
+   trap:"Un loyer manifestement excessif est réintégré. Et une SCI à l'IS change complètement le calcul le jour de la revente, à cause des amortissements déduits entre-temps.",
+   when:function(p){ if(has(p,"murs")) return 2; if(p.local==="proprio") return 2; return p.local==="loue" ? 1 : 0; }},
+
+  {id:"STR-02", dom:"STR", enjeu:3, effort:3, moment:"18 mois avant la cession",
+   title:"Une holding au-dessus de l'exploitation",
+   teaser:"Utile quand les bénéfices s'accumulent, ou quand une vente se profile.",
+   what:"Une société holding détient les titres de votre société. Les dividendes qu'elle reçoit sont quasi exonérés grâce au régime mère-fille, seule une quote-part de 5 % restant imposable. En cas de cession, l'apport des titres à la holding avant la vente permet, sous condition de réinvestissement, de reporter l'imposition de la plus-value.",
+   gain:"Sur une cession, le report d'imposition porte sur des sommes qui se comptent en dizaines ou centaines de milliers d'euros.",
+   ask:"Est-ce que le volume de mes bénéfices et mon horizon de cession justifient une holding, et à quel moment faut-il la créer ?",
+   trap:"L'apport de titres n'a d'effet que s'il précède réellement la vente, et il impose de réinvestir une part significative du prix dans une activité économique. Fait au mauvais moment, c'est un abus de droit.",
+   when:function(p){ if(has(p,"transmission")) return 2; if(p.forme!=="is") return 0; return (p.benef==="haut"||p.benef==="tres") ? 2 : 0; }},
+
+  {id:"STR-03", dom:"STR", enjeu:3, effort:2, moment:"Décision d'exercice",
+   title:"Rester à l'impôt sur le revenu ou opter pour l'IS",
+   teaser:"À l'IR, tout le bénéfice est imposé et cotisé, même ce que vous laissez dans l'entreprise.",
+   what:"Une entreprise individuelle peut opter pour l'impôt sur les sociétés. Vos cotisations sociales et votre impôt ne portent alors plus sur le bénéfice entier, mais sur ce que vous vous versez. Le reste finance la croissance en n'ayant supporté que l'IS.",
+   gain:"Quand une part du bénéfice reste dans l'entreprise, l'écart de trésorerie la première année se compte souvent en dizaines de milliers d'euros.",
+   ask:"Sur mes trois derniers exercices, qu'aurait donné l'option pour l'IS, cotisations et impôt personnel compris ?",
+   trap:"L'option devient irrévocable au bout de cinq ans, et le retour en arrière déclenche des conséquences fiscales lourdes. Ce n'est pas une décision d'un seul exercice.",
+   when:function(p){ if(p.forme==="ir") return 2; return p.forme==="micro" ? 1 : 0; }},
+
+  {id:"STR-04", dom:"STR", enjeu:3, effort:3, moment:"2 à 3 ans avant",
+   title:"Préparer la sortie bien avant de vendre",
+   teaser:"Les exonérations de plus-values se préparent, elles ne se demandent pas au moment de signer.",
+   what:"Plusieurs régimes permettent d'exonérer tout ou partie de la plus-value de cession : selon le niveau de recettes, selon la valeur des éléments cédés, ou au titre du départ à la retraite. Chacun a ses conditions, dont une durée minimale d'activité de cinq ans.",
+   gain:"Une exonération obtenue, c'est parfois l'équivalent d'une année entière de résultat qui reste dans votre poche.",
+   ask:"Si je vends dans deux ans, quel régime d'exonération puis-je viser, et que faut-il modifier dès maintenant pour y être éligible ?",
+   trap:"Certaines opérations faites juste avant la vente, sortir un actif, changer de forme, arrêter une branche, font perdre le bénéfice du régime. L'ordre des étapes compte autant que les étapes.",
+   when:function(p){ if(has(p,"transmission")) return 2; return p.benef==="tres" ? 1 : 0; }},
+
+  {id:"STR-05", dom:"STR", enjeu:3, effort:2, moment:"À vérifier avant le prochain crédit",
+   title:"Ce qui protège vraiment votre patrimoine personnel",
+   teaser:"La séparation légale des patrimoines saute dès que vous signez une caution.",
+   what:"Depuis 2022, l'entrepreneur individuel bénéficie d'une séparation automatique entre patrimoine professionnel et patrimoine personnel. En société, la responsabilité est en principe limitée aux apports. Dans les deux cas, la caution personnelle donnée à la banque et la faute de gestion rouvrent la porte au patrimoine privé.",
+   gain:"C'est ce qui décide de ce qu'il vous reste si l'entreprise s'arrête mal.",
+   ask:"Quelles cautions ai-je signées, sur quels montants et jusqu'à quand, et que puis-je négocier au prochain renouvellement ?",
+   trap:"Le régime matrimonial pèse autant que la forme juridique. Une communauté sans aménagement expose les biens du couple malgré la séparation des patrimoines professionnels.",
+   when:function(p){ return p.treso==="tendue" ? 2 : 1; }},
+
+  {id:"STR-06", dom:"STR", enjeu:3, effort:3, moment:"Plusieurs années avant",
+   title:"Transmettre à ses enfants sans les ruiner",
+   teaser:"L'engagement de conservation des titres divise l'assiette taxable par quatre.",
+   what:"Le pacte Dutreil permet, sous conditions d'engagement collectif puis individuel de conservation des titres et d'exercice d'une fonction de direction, un abattement de 75 % sur la valeur transmise. Il se combine avec la donation en nue-propriété et les abattements de droit commun.",
+   gain:"Sur une entreprise valorisée 800 000 €, l'abattement ramène l'assiette taxable à 200 000 € avant abattements familiaux.",
+   ask:"Mon entreprise est-elle éligible au pacte Dutreil, et quelles fonctions faut-il que je conserve après la transmission ?",
+   trap:"L'engagement se rompt si les titres sont cédés ou si la fonction de direction n'est pas exercée pendant la durée requise. La remise en cause porte alors sur la totalité de l'avantage, avec intérêts.",
+   when:function(p){ if(has(p,"transmission")) return 2; return (p.benef==="haut"||p.benef==="tres") ? 1 : 0; }},
+
+  {id:"STR-07", dom:"STR", enjeu:3, effort:2, moment:"18 mois avant l'échéance triennale",
+   title:"Le bail commercial : ce qui se renégocie vraiment",
+   teaser:"Le loyer, mais aussi les charges, la destination et la sortie.",
+   what:"Le loyer se révise selon un indice, et son augmentation au renouvellement est encadrée. Au-delà du montant, le bail répartit les charges, les gros travaux et la taxe foncière, et un inventaire précis des charges refacturables est obligatoire. La destination des locaux détermine ce que vous avez le droit d'y faire.",
+   gain:"Sur un loyer de 2 000 € par mois, faire porter au bailleur les charges qui lui incombent représente plusieurs milliers d'euros par an.",
+   ask:"Mon bail met-il à ma charge des postes qui reviennent légalement au bailleur, et quelle est ma prochaine fenêtre de renégociation ?",
+   trap:"Le congé et la demande de renouvellement obéissent à des délais stricts. Les laisser passer, c'est se retrouver en tacite prolongation, dans une position de négociation plus faible.",
+   when:function(p){ return p.local === "loue" ? 2 : 0; }},
+
+  {id:"STR-08", dom:"STR", enjeu:2, effort:1, moment:"Le plus tôt possible",
+   title:"Protéger le nom sous lequel vous travaillez",
+   teaser:"L'immatriculation au registre du commerce ne protège pas votre nom commercial.",
+   what:"Le dépôt d'une marque à l'INPI donne un droit exclusif sur un nom, dans les classes de produits ou services choisies, pour dix ans renouvelables. Une recherche d'antériorité vérifie au passage que vous n'utilisez pas déjà le nom d'un autre, ce qui arrive plus souvent qu'on ne le pense.",
+   gain:"Le coût du dépôt se compte en centaines d'euros. Devoir changer d'enseigne après cinq ans se compte en dizaines de milliers.",
+   ask:"Mon nom commercial est-il protégeable, et dans quelles classes faut-il déposer compte tenu de mon activité ?",
+   trap:"Découvrir une antériorité après avoir imprimé l'enseigne, les véhicules et les documents commerciaux est le scénario coûteux. La recherche se fait avant, pas après.",
+   links:[{t:"Déposer et surveiller une marque", u:"https://www.inpi.fr/"}],
+   when:function(p){ return (p.anciennete === "neuve" || p.anciennete === "jeune") ? 2 : 1; }},
+
+  {id:"STR-09", dom:"STR", enjeu:3, effort:2, moment:"À traiter une fois, sérieusement",
+   title:"Si vous n'êtes plus là demain matin",
+   teaser:"Qui signe, qui accède aux comptes, qui peut décider à votre place.",
+   what:"Dans une petite entreprise, tout passe par une personne : la signature bancaire, les codes, les relations clés. En cas d'accident, l'entreprise peut se retrouver bloquée alors qu'elle est parfaitement viable. Un mandataire désigné, une seconde signature bancaire, des statuts qui prévoient la suite et un accès aux outils rangé quelque part de sûr évitent ce blocage.",
+   gain:"C'est la différence entre une entreprise qui continue quelques semaines sans vous et une entreprise qui s'arrête net.",
+   ask:"Concrètement, si je suis hors circuit trois mois, qui peut signer, payer les salaires et décider ? Que faut-il mettre en place pour ça ?",
+   trap:"Une procuration bancaire ne suffit pas toujours : elle peut cesser avec l'incapacité du mandant. Le sujet se traite avec le notaire autant qu'avec le banquier.",
+   when:function(p){ return p.salaries === "0" ? 1 : 2; }},
+
+  /* ─────────── FIS ─────────── */
+  {id:"FIS-01", dom:"FIS", enjeu:2, effort:1, moment:"Avant la clôture",
+   title:"Le taux réduit d'impôt sur les sociétés",
+   teaser:"15 % au lieu de 25 % sur les premiers 42 500 € de bénéfice, à trois conditions.",
+   what:"Les sociétés dont le chiffre d'affaires reste sous 10 M€ bénéficient d'un taux de 15 % sur la première tranche de 42 500 € de bénéfice, puis de 25 % au-delà. Deux autres conditions s'ajoutent : un capital entièrement libéré et une détention à 75 % au moins par des personnes physiques.",
+   gain:"4 250 € d'impôt en moins chaque année dès que le bénéfice atteint la tranche.",
+   ask:"Mon capital est-il entièrement libéré et ma détention respecte-t-elle les 75 % ? Confirmez-moi que j'ai bien le taux réduit.",
+   trap:"Le capital souscrit mais non libéré est le motif de perte le plus fréquent, et il est facile à corriger : encore faut-il le faire avant la clôture.",
+   links:[{t:"Impôt sur les sociétés : taux et conditions", u:"https://entreprendre.service-public.gouv.fr/vosdroits/F23575"}],
+   when:function(p){ return p.forme==="is" ? 2 : 0; }},
+
+  {id:"FIS-02", dom:"FIS", enjeu:2, effort:2, moment:"Au changement de seuil",
+   title:"Votre régime de TVA",
+   teaser:"Le régime choisi à la création est rarement encore le bon cinq ans plus tard.",
+   what:"En 2026, la franchise en base s'applique jusqu'à 85 000 € de chiffre d'affaires pour les ventes et 37 500 € pour les prestations de services, avec des seuils majorés à 93 500 € et 41 250 €. Au-delà, le choix se fait entre réel simplifié et réel normal, et il détermine votre rythme de déclaration et votre trésorerie.",
+   gain:"Sortir volontairement de la franchise permet de récupérer la TVA sur les investissements ; y rester évite de renchérir vos prix face à une clientèle de particuliers.",
+   ask:"Compte tenu de mes clients et de mes investissements à venir, quel régime de TVA me convient, et à quelle date puis-je en changer ?",
+   trap:"Le seuil unique à 25 000 € a été définitivement abandonné par la loi du 4 novembre 2025 : les seuils historiques restent en vigueur. Les articles de 2025 qui annoncent le contraire circulent encore.",
+   links:[{t:"Franchise en base de TVA", u:"https://entreprendre.service-public.gouv.fr/vosdroits/F21746"}],
+   when:function(p){ if(p.forme==="micro") return 2; return 1; }},
+
+  {id:"FIS-03", dom:"FIS", enjeu:3, effort:1, moment:"Deux mois avant la clôture",
+   title:"Les décisions qui doivent tomber avant la clôture",
+   teaser:"Après la date de clôture, l'essentiel de la marge de manœuvre a disparu.",
+   what:"Créances devenues douteuses, charges à payer, stocks dépréciés, primes décidées avant la fin de l'exercice, matériel mis en service : chacune de ces décisions modifie le résultat, et chacune doit être prise et documentée avant la clôture.",
+   gain:"Une provision de 10 000 € correctement justifiée, ce sont 2 500 € d'impôt différés au taux normal.",
+   ask:"Combien de temps avant ma clôture faut-il qu'on se voie pour que les arbitrages soient encore possibles ?",
+   trap:"Une provision doit reposer sur des faits antérieurs à la clôture : une relance restée sans réponse, un litige ouvert. Constituée pour ajuster un résultat, elle est réintégrée.",
+   when:function(p){ return p.benef==="bas" ? 1 : 2; }},
+
+  {id:"FIS-04", dom:"FIS", enjeu:1, effort:1, moment:"À la réception de l'avis",
+   title:"Vérifier vos bases de CFE",
+   teaser:"La cotisation foncière se calcule sur une surface déclarée qu'on oublie de mettre à jour.",
+   what:"La CFE est assise sur la valeur locative des locaux utilisés. Une surface réduite, un local rendu, une activité passée à domicile changent la base. Les entreprises nouvelles bénéficient d'une exonération la première année et d'une réduction de moitié la deuxième, et certaines communes votent des exonérations locales.",
+   gain:"Quelques centaines à quelques milliers d'euros par an, sur une taxe due même en l'absence de bénéfice.",
+   ask:"Ma déclaration de CFE reflète-t-elle encore mes locaux réels, et suis-je sur la base minimum ou sur une base réelle ?",
+   trap:"La réclamation se fait dans un délai strict après réception de l'avis. Passé ce délai, la base erronée est due, et elle sert de base l'année suivante.",
+   when:function(p){ if(p.anciennete==="neuve") return 2; return p.local==="domicile" ? 2 : 1; }},
+
+  {id:"FIS-05", dom:"FIS", enjeu:2, effort:2, moment:"Avant le 1er septembre 2027", echeance:"01.09.2027",
+   title:"Facturation électronique : où vous en êtes vraiment",
+   teaser:"Depuis le 1er septembre 2026, toute entreprise doit pouvoir recevoir une facture électronique.",
+   what:"La réforme est entrée en application. Depuis le 1er septembre 2026, toutes les entreprises doivent être en mesure de recevoir leurs factures fournisseurs au format électronique via une plateforme agréée. L'obligation d'émettre arrive le 1er septembre 2027 pour les TPE et les PME.",
+   gain:"Au-delà de la conformité, le passage oblige à structurer les données de facturation : c'est le moment où un suivi de marge devient possible sans ressaisie.",
+   ask:"Quelle plateforme avez-vous retenue au cabinet, comment mes factures y arrivent-elles, et que dois-je avoir fait de mon côté avant septembre 2027 ?",
+   trap:"L'administration a annoncé viser l'adoption plutôt que la sanction dans un premier temps, ce qui a rassuré à tort beaucoup de dirigeants. Le vrai risque n'est pas l'amende, c'est la facture fournisseur qui arrive sur une plateforme que personne ne consulte.",
+   links:[{t:"Je découvre la facturation électronique", u:"https://www.impots.gouv.fr/professionnel/je-decouvre-la-facturation-electronique"}, {t:"La liste des plateformes agréées", u:"https://www.impots.gouv.fr/facturation-electronique-et-plateformes-agreees"}],
+   when:function(p){ return 2; }},
+
+  {id:"FIS-06", dom:"FIS", enjeu:2, effort:2, moment:"Se décide un an avant",
+   title:"Choisir sa date de clôture",
+   teaser:"Clôturer au 31 décembre est une habitude, pas une obligation.",
+   what:"La date de clôture peut être fixée à n'importe quel mois. La caler après la haute saison donne un exercice qui reflète un cycle complet, avec des stocks au plus bas et une trésorerie lisible. Un exercice peut aussi être allongé ou raccourci une fois, pour lisser un résultat exceptionnel.",
+   gain:"Un décalage de clôture bien choisi étale un pic de résultat sur deux exercices et lisse l'impôt correspondant.",
+   ask:"Compte tenu de la saisonnalité de mon activité, quelle date de clôture serait la plus lisible, et que coûte le changement ?",
+   trap:"Le changement de date suppose une décision des associés et une modification des statuts, et l'administration regarde de près un allongement d'exercice motivé par la seule fiscalité.",
+   when:function(p){ if(p.secteur==="chr"||p.secteur==="commerce"||p.secteur==="batiment") return 2; return 1; }},
+
+  {id:"FIS-07", dom:"FIS", enjeu:2, effort:2, moment:"Avant le prochain contrôle",
+   title:"Ce que vous devez pouvoir sortir en cas de contrôle",
+   teaser:"Fichier des écritures, piste d'audit, logiciel de caisse conforme.",
+   what:"Un contrôle commence par la demande du fichier des écritures comptables au format réglementaire. S'y ajoutent la piste d'audit fiable, qui relie chaque facture à sa commande et à sa livraison, et pour les encaissements auprès de particuliers, l'obligation d'utiliser un logiciel de caisse certifié.",
+   gain:"Un dossier tenu transforme un contrôle en formalité. Un dossier absent transforme un contrôle en reconstitution de chiffre d'affaires.",
+   ask:"Mon logiciel produit-il un fichier des écritures conforme, et suis-je concerné par l'obligation de caisse certifiée ?",
+   trap:"L'attestation de conformité du logiciel de caisse doit pouvoir être présentée immédiatement. Son absence est sanctionnée par une amende par logiciel, indépendamment de toute fraude.",
+   when:function(p){ if(p.clients==="particuliers"||p.secteur==="chr"||p.secteur==="commerce") return 2; return 1; }},
+
+  {id:"FIS-08", dom:"FIS", enjeu:2, effort:1, moment:"Dès que la perte est certaine",
+   title:"Récupérer la TVA sur une facture jamais payée",
+   teaser:"Vous avez reversé au Trésor une TVA que le client ne vous a jamais versée.",
+   what:"Quand une créance devient définitivement irrécouvrable, liquidation judiciaire close ou recouvrement infructueux prouvé, la TVA déjà reversée se récupère. La condition est formelle : il faut émettre une facture rectificative portant la mention exacte prévue par le code général des impôts, et pouvoir prouver le caractère définitif de la perte.",
+   gain:"Sur une créance de 12 000 € TTC perdue, ce sont 2 000 € de TVA qui reviennent.",
+   ask:"Sur mes créances perdues, lesquelles remplissent la condition du caractère définitif, et quelle est la mention exacte à porter sur la facture rectificative ?",
+   trap:"Une créance seulement douteuse ouvre droit à une provision, pas à la récupération de TVA. Confondre les deux, c'est un redressement assuré.",
+   links:[{t:"TVA sur créances irrécouvrables (BOFiP)", u:"https://bofip.impots.gouv.fr/bofip/1100-PGP.html"}],
+   when:function(p){ if(p.clients === "particuliers") return 0; return p.treso === "tendue" ? 2 : 1; }},
+
+  {id:"FIS-09", dom:"FIS", enjeu:1, effort:1, moment:"À l'inventaire annuel",
+   title:"Le matériel qui figure au bilan et qui n'existe plus",
+   teaser:"On amortit pendant des années des équipements partis à la benne.",
+   what:"L'inventaire des immobilisations finit rarement par être confronté à la réalité. Un matériel hors service, volé ou cédé doit sortir de l'actif : la valeur qui restait à amortir devient alors une charge de l'exercice.",
+   gain:"Une sortie d'actif de 8 000 € en valeur nette, ce sont 2 000 € d'impôt en moins au taux normal.",
+   ask:"Pouvez-vous m'éditer l'état des immobilisations, que je pointe ce qui n'existe plus, et que faut-il conserver comme justificatif ?",
+   trap:"La sortie doit être justifiée : bon d'enlèvement, dépôt de plainte, facture de cession. Une mise au rebut décrétée sans preuve est réintégrée.",
+   when:function(p){ if(p.forme === "micro" || p.anciennete === "neuve") return 0; return 1; }},
+
+  {id:"FIS-10", dom:"FIS", enjeu:2, effort:2, moment:"Avant de monter l'opération",
+   title:"Faire valider par l'administration avant d'agir",
+   teaser:"Le rescrit fiscal engage l'administration sur votre situation précise.",
+   what:"Le rescrit consiste à exposer une situation de fait à l'administration et à lui demander sa position. La réponse lui est opposable : elle ne pourra pas vous redresser sur ce qu'elle a validé. Des rescrits spécifiques existent pour la recherche, l'innovation, les zones d'implantation et le mécénat.",
+   gain:"Sur un montage à fort enjeu, c'est la différence entre un risque assumé dans le flou et une position sécurisée par écrit.",
+   ask:"Sur cette opération, un rescrit est-il utile, quel est le délai de réponse, et quel risque y a-t-il à poser la question ?",
+   trap:"Un rescrit mal rédigé, ou qui décrit une situation différente de celle réellement mise en œuvre, ne protège de rien. Il se prépare avec le cabinet.",
+   links:[{t:"Le rescrit fiscal", u:"https://www.impots.gouv.fr/professionnel/le-rescrit-fiscal"}],
+   when:function(p){ if(has(p,"rd")) return 2; return (p.benef === "haut" || p.benef === "tres") ? 1 : 1; }},
+
+  /* ─────────── RIS ─────────── */
+  {id:"RIS-01", dom:"RIS", enjeu:3, effort:1, moment:"À relire cette année",
+   title:"Ce que votre RC professionnelle ne couvre pas",
+   teaser:"Les exclusions se lisent le jour du sinistre, rarement avant.",
+   what:"La responsabilité civile professionnelle couvre les dommages causés à des tiers dans l'exercice de l'activité. Les contrats excluent souvent les activités ajoutées après la souscription, les prestations sous-traitées et les dommages immatériels non consécutifs. Dans le bâtiment, la garantie décennale est obligatoire et doit couvrir exactement les activités déclarées.",
+   gain:"L'écart entre une activité déclarée et une activité réellement exercée peut vider la garantie au moment du sinistre.",
+   ask:"Mon contrat couvre-t-il toutes les activités que j'exerce aujourd'hui, y compris celles ajoutées depuis la souscription ?",
+   trap:"Exercer une activité du bâtiment sans assurance décennale correspondante est une infraction pénale, et le dirigeant en répond personnellement.",
+   when:function(p){ if(p.secteur==="batiment") return 2; return 1; }},
+
+  {id:"RIS-02", dom:"RIS", enjeu:2, effort:2, moment:"À chiffrer une fois",
+   title:"Perte d'exploitation et homme-clé",
+   teaser:"L'incendie détruit le local ; ce qui tue l'entreprise, c'est l'arrêt d'activité qui suit.",
+   what:"L'assurance perte d'exploitation compense la marge non réalisée pendant l'interruption, et l'assurance homme-clé indemnise l'entreprise en cas de disparition ou d'incapacité d'une personne dont dépend l'activité. Les primes sont déductibles.",
+   gain:"Sur une interruption de quatre mois, la couverture porte sur l'équivalent d'un tiers de résultat annuel.",
+   ask:"Sur quelle durée d'interruption et sur quelle marge mon contrat me couvre-t-il, et faut-il une garantie homme-clé dans ma situation ?",
+   trap:"L'indemnisation est calculée sur des chiffres déclarés à la souscription. Une entreprise qui a doublé de taille sans mettre à jour son contrat est sous-assurée de moitié.",
+   when:function(p){ if(p.secteur==="chr"||p.secteur==="commerce"||p.secteur==="tech") return 2; return (p.benef==="haut"||p.benef==="tres") ? 2 : 1; }},
+
+  {id:"RIS-03", dom:"RIS", enjeu:2, effort:1, moment:"À traiter avant l'incident",
+   title:"Fraude au virement et cyberattaque",
+   teaser:"La fraude au faux fournisseur vise en priorité les entreprises sans procédure de validation.",
+   what:"Le schéma est toujours le même : un courriel annonce un changement de coordonnées bancaires, le virement part, la banque n'est pas responsable. Une procédure écrite de double validation, un rappel systématique du fournisseur sur son numéro connu, et une sauvegarde hors ligne coûtent presque rien.",
+   gain:"Le montant moyen d'une fraude au virement réussie dépasse largement le coût de n'importe quel levier fiscal de cette page.",
+   ask:"Quelle procédure de validation des changements de coordonnées bancaires me conseillez-vous, et mon assurance couvre-t-elle ce risque ?",
+   trap:"La plupart des contrats multirisques excluent la fraude par manipulation, celle où c'est un salarié qui exécute le virement de bonne foi. C'est une extension à souscrire à part.",
+   links:[{t:"Réagir à une fraude ou une attaque", u:"https://www.cybermalveillance.gouv.fr/"}],
+   when:function(p){ return p.salaries==="0" ? 1 : 2; }},
+
+  {id:"RIS-04", dom:"RIS", enjeu:2, effort:1, moment:"Avant de signer le prêt",
+   title:"L'assurance de votre prêt professionnel",
+   teaser:"Elle est vendue avec le crédit, elle ne l'est pas forcément au bon prix.",
+   what:"L'assurance emprunteur d'un prêt professionnel peut être souscrite ailleurs que dans la banque qui prête, à garanties équivalentes. Au-delà du prix, ce sont les garanties qui comptent : incapacité de travail, invalidité, et surtout la quotité assurée sur chaque associé.",
+   gain:"Sur un prêt de 150 000 € sur sept ans, l'écart entre le contrat de la banque et une délégation atteint couramment plusieurs milliers d'euros.",
+   ask:"Sur ce prêt, quelle quotité faut-il assurer sur chaque associé, et la délégation d'assurance est-elle négociable ici ?",
+   trap:"La banque conditionne parfois son accord à sa propre assurance. C'est avant la signature, pas après, que votre marge de manœuvre est maximale.",
+   when:function(p){ if(has(p,"materiel") || has(p,"murs")) return 2; return p.treso === "tendue" ? 1 : 0; }}
+
+  ];
+
+  /* ── état ────────────────────────────────────── */
+  var STORE = "carnet-leviers-v3";
+  var picked = {};
+  var dropped = {};
+  var openState = {};
+  var filter = "tout";
+  var query = "";
+  var domFilter = "";
+  var lastCount = 0;
+  var form = document.getElementById("form");
+  var results = document.getElementById("results");
+  var nav = document.getElementById("nav");
+  var FIELDS = ["forme","statut","secteur","anciennete","benef","salaries","clients","vehicule","local","treso","horizon","outils","souci"];
+
+  function readProfile(){
+    var p = {projets:[]};
+    FIELDS.forEach(function(n){
+      var el = form.querySelector('input[name="'+n+'"]:checked');
+      p[n] = el ? el.value : "";
+    });
+    Array.prototype.forEach.call(form.querySelectorAll('input[name="projet"]:checked'), function(el){
+      p.projets.push(el.value);
+    });
+    return p;
+  }
+
+  function save(p){
+    try{
+      localStorage.setItem(STORE, JSON.stringify({p:p, picked:picked, dropped:dropped}));
+    }catch(e){}
+  }
+
+  function restore(){
+    var raw = null;
+    try{ raw = localStorage.getItem(STORE); }catch(e){}
+    if(!raw) return;
+    var d;
+    try{ d = JSON.parse(raw); }catch(e){ return; }
+    if(!d || !d.p) return;
+    FIELDS.forEach(function(n){
+      var el = form.querySelector('input[name="'+n+'"][value="'+d.p[n]+'"]');
+      if(el) el.checked = true;
+    });
+    Array.prototype.forEach.call(form.querySelectorAll('input[name="projet"]'), function(el){
+      el.checked = (d.p.projets||[]).indexOf(el.value) >= 0;
+    });
+    if(d.picked) picked = d.picked;
+    if(d.dropped) dropped = d.dropped;
+    var note = document.getElementById("prefill-note");
+    if(note) note.textContent = "Vos réponses sont conservées dans ce navigateur.";
+    document.querySelector("section.profil").classList.add("closed");
+    document.getElementById("fold-profil").textContent = "Modifier la situation";
+    foldHowto(true);
+  }
+
+  function foldHowto(closed){
+    document.getElementById("howto").classList.toggle("closed", closed);
+    document.getElementById("fold-howto").textContent = closed ? "Revoir le mode d'emploi" : "Masquer";
+  }
+  document.getElementById("fold-howto").addEventListener("click", function(){
+    foldHowto(!document.getElementById("howto").classList.contains("closed"));
+  });
+
+  function foldProfil(closed){
+    var s = document.querySelector("section.profil");
+    s.classList.toggle("closed", closed);
+    document.getElementById("fold-profil").textContent = closed ? "Modifier la situation" : "Replier la situation";
+  }
+
+  function esc(s){
+    return String(s).replace(/[&<>"]/g, function(c){
+      return c === "&" ? "&amp;" : c === "<" ? "&lt;" : c === ">" ? "&gt;" : "&quot;";
+    });
+  }
+
+  function dots(n, label){
+    var h = '<span class="dots" role="img" aria-label="' + label + ' ' + n + ' sur 3">';
+    for(var i = 1; i <= 3; i++) h += '<i class="' + (i <= n ? "on" : "") + '"></i>';
+    return h + "</span>";
+  }
+
+  function scoreAll(p){
+    var out = [];
+    L.forEach(function(l){
+      if(dropped[l.id]) return;
+      var s = 0;
+      try{ s = l.when(p) || 0; }catch(e){ s = 0; }
+      if(s > 0) out.push({l:l, s:s});
+    });
+    return out;
+  }
+
+  function passFilter(x){
+    if(domFilter && x.l.dom !== domFilter) return false;
+    if(filter === "prio" && x.s !== 2) return false;
+    if(filter === "date" && !x.l.echeance) return false;
+    if(filter === "enjeu" && x.l.enjeu < 3) return false;
+    if(filter === "liste" && !picked[x.l.id]) return false;
+    if(query){
+      var hay = (x.l.title + " " + x.l.teaser + " " + x.l.what + " " + x.l.trap + " " + x.l.id).toLowerCase();
+      if(hay.indexOf(query) < 0) return false;
+    }
+    return true;
+  }
+
+  function render(){
+    var p = readProfile();
+    save(p);
+    var scored = scoreAll(p);
+
+    lastCount = scored.length;
+    document.getElementById("n-total").textContent = scored.length;
+    document.getElementById("n-prio").textContent = scored.filter(function(x){ return x.s === 2; }).length;
+    document.getElementById("n-ech").textContent = scored.filter(function(x){ return !!x.l.echeance; }).length;
+
+    buildRoute(scored, p);
+    buildTiles(scored);
+    buildMatrix(scored);
+    buildDates(scored);
+
+    var shown = scored.filter(passFilter);
+    var html = "", navHtml = "", opened = 0;
+
+    DOMAINS.forEach(function(d){
+      var all = scored.filter(function(x){ return x.l.dom === d.key; });
+      var items = shown.filter(function(x){ return x.l.dom === d.key; });
+      if(all.length){
+        navHtml += '<a href="#dom-' + d.key + '" data-dom="' + d.key + '"'
+                +  (domFilter === d.key ? ' class="on"' : "") + '>'
+                +  '<span><span class="rc">' + d.code + '</span>' + esc(d.short) + '</span>'
+                +  '<span class="n">' + items.length + '</span></a>';
+      }
+      if(!items.length) return;
+      items.sort(function(a,b){ return (b.s - a.s) || (b.l.enjeu - a.l.enjeu); });
+
+      html += '<section class="domain" id="dom-' + d.key + '"><div class="domain-head">'
+            + '<span class="domain-mark">' + glyph(d.key) + '</span>'
+            + '<span class="domain-code">' + d.code + '</span>'
+            + '<span class="domain-name">' + d.name + '</span>'
+            + '<span class="domain-n">' + items.length + (items.length > 1 ? " leviers" : " levier") + '</span>'
+            + '</div><p class="domain-sub">' + esc(d.sub) + '</p>';
+
+      items.forEach(function(x){
+        var l = x.l, dflt = false;
+        if(x.s === 2 && l.enjeu === 3 && opened < 2){ dflt = true; opened++; }
+        var open = (openState.hasOwnProperty(l.id) ? openState[l.id] : dflt) ? " open" : "";
+        var on = !!picked[l.id];
+
+        html += '<details class="lever" id="lev-' + l.id + '"' + open + '>'
+             +  '<summary>'
+             +    '<span class="l-code">' + l.id + '</span>'
+             +    '<span class="l-title">' + esc(l.title) + '</span>'
+             +    '<span class="l-right">'
+             +      '<button class="l-add" type="button" data-add="' + l.id + '" aria-pressed="' + (on ? "true" : "false")
+             +        '" title="' + (on ? "Retirer de ma liste" : "Ajouter à ma liste de questions") + '">' + (on ? "✓" : "+") + '</button>'
+             +      dots(l.enjeu, "Enjeu")
+             +      (l.echeance ? '<span class="pill pill-date">' + esc(l.echeance) + '</span>' : "")
+             +      '<span class="pill ' + (x.s === 2 ? 'pill-prio">prioritaire' : 'pill-exp">à explorer') + '</span>'
+             +    '</span>'
+             +    '<span class="l-teaser">' + esc(l.teaser) + '</span>'
+             +  '</summary>'
+             +  '<div class="body">'
+             +    '<div class="meta">'
+             +      '<span>Enjeu ' + dots(l.enjeu, "Enjeu") + '</span>'
+             +      '<span>Effort ' + dots(l.effort, "Effort") + '</span>'
+             +      '<span>' + esc(l.moment) + '</span>'
+             +    '</div>'
+             +    '<div class="field"><span class="lab">Ce que c\'est</span><p>' + esc(l.what) + '</p></div>'
+             +    '<div class="field field-gain"><span class="lab">Ordre de grandeur</span><p>' + esc(l.gain) + '</p></div>'
+             +    '<div class="field field-trap"><span class="lab">Le piège</span><p>' + esc(l.trap) + '</p></div>'
+             +    (l.links ? '<div class="field field-links"><span class="lab">Source officielle</span><p>'
+             +      l.links.map(function(k){
+                      var host = k.u.replace(/^https?:\/\//, "").split("/")[0].replace(/^www\./, "");
+                      return '<a href="' + k.u + '" target="_blank" rel="noopener noreferrer">' + esc(k.t)
+                           + '<span class="lk-host">' + esc(host) + '</span></a>';
+                    }).join("") + '</p></div>' : "")
+             +    '<div class="ask"><span class="ask-lab">La question à poser</span><p><em>' + esc(l.ask) + '</em></p></div>'
+             +    '<div class="row-actions">'
+             +      '<button class="add" type="button" data-add="' + l.id + '" aria-pressed="' + (on ? "true" : "false") + '">'
+             +        (on ? "✓ Dans ma liste" : "Ajouter à ma liste") + '</button>'
+             +      '<button class="drop" type="button" data-drop="' + l.id + '">Ça ne me concerne pas</button>'
+             +    '</div>'
+             +  '</div>'
+             + '</details>';
+      });
+      html += '<div class="dom-foot"><a href="#situation">Haut de page</a></div></section>';
+    });
+
+    if(domFilter && html){
+      var dn = "";
+      DOMAINS.forEach(function(d){ if(d.key === domFilter) dn = d.name; });
+      html = '<div class="dom-banner">Vous ne voyez que la rubrique <b>' + esc(dn) + '</b>'
+           + '<button type="button" id="all-dom">Afficher les ' + DOMAINS.length + ' rubriques</button></div>' + html;
+    }
+
+    if(!html){
+      html = '<p class="empty">Aucun levier ne correspond à ce filtre ou à cette recherche. Élargissez avec «&nbsp;Tout&nbsp;».</p>';
+    }
+    results.innerHTML = html;
+    nav.innerHTML = navHtml;
+    summarise();
+    spy();
+    renderList();
+  }
+
+  /* ── feuille de route : les cinq premiers ────── */
+  /* ce qui préoccupe le dirigeant remonte dans le classement */
+  var SOUCI = {
+    treso:      ["TRE", "PIL"],
+    impot:      ["FIS", "AID", "REM"],
+    temps:      ["OUT", "FIS"],
+    risques:    ["RIS", "STR"],
+    croissance: ["EQU", "PIL", "AID"]
+  };
+  function rank(x, p){
+    var s = (x.s === 2 ? 100 : 0) + x.l.enjeu * 12 - x.l.effort * 5 + (x.l.echeance ? 22 : 0);
+    var fav = SOUCI[p && p.souci] || [];
+    if(fav.indexOf(x.l.dom) >= 0) s += 20;
+    return s;
+  }
+  function buildRoute(scored, p){
+    /* au plus deux leviers par rubrique, pour que les cinq ne se ressemblent pas */
+    var ordered = scored.slice().sort(function(a, b){
+      return rank(b, p) - rank(a, p) || a.l.id.localeCompare(b.l.id);
+    });
+    var perDom = {}, top = [];
+    ordered.forEach(function(x){
+      if(top.length >= 5) return;
+      var n = perDom[x.l.dom] || 0;
+      if(n >= 2) return;
+      perDom[x.l.dom] = n + 1;
+      top.push(x);
+    });
+    if(top.length < 5){
+      ordered.forEach(function(x){
+        if(top.length < 5 && top.indexOf(x) < 0) top.push(x);
+      });
+    }
+    var dom = {};
+    DOMAINS.forEach(function(d){ dom[d.key] = d.name; });
+
+    document.getElementById("route").innerHTML = top.map(function(x, i){
+      var l = x.l, on = !!picked[l.id];
+      return '<li class="route-item">'
+        + '<span class="route-n">' + (i + 1) + '</span>'
+        + '<span class="route-t"><button type="button" data-go="' + l.id + '">' + esc(l.title) + '</button></span>'
+        + '<span class="route-side">'
+        +   '<button class="l-add wide" type="button" data-add="' + l.id + '" aria-pressed="' + (on ? "true" : "false")
+        +     '">' + (on ? "✓ Retenue" : "+ Ajouter") + '</button>'
+        + '</span>'
+        + '<p class="route-q">« ' + esc(l.ask) + ' »</p>'
+        + '<span class="route-meta">'
+        +   '<span>' + esc(dom[l.dom] || "") + '</span>'
+        +   '<span>Enjeu ' + dots(l.enjeu, "Enjeu") + '</span>'
+        +   '<span>Effort ' + dots(l.effort, "Effort") + '</span>'
+        +   (l.echeance ? '<span class="pill pill-date">' + esc(l.echeance) + '</span>' : "")
+        + '</span>'
+        + '</li>';
+    }).join("") || '<li class="empty">Répondez au moins aux quatre premières questions pour voir apparaître une feuille de route.</li>';
+  }
+
+  /* ── carte des rubriques ─────────────────────── */
+  function buildTiles(scored){
+    var h = "";
+    DOMAINS.forEach(function(d){
+      var items = scored.filter(function(x){ return x.l.dom === d.key; });
+      if(!items.length) return;
+      var prio = items.filter(function(x){ return x.s === 2; }).length;
+      var expl = items.length - prio;
+      var w = 100 / items.length;
+      h += '<a class="tile" href="#dom-' + d.key + '" data-dom="' + d.key + '">'
+         +   '<span class="tile-top">' + glyph(d.key) + '<span class="tile-code">' + d.code + '</span></span>'
+         +   '<span class="tile-name">' + esc(d.name) + '</span>'
+         +   '<span class="tile-foot">'
+         +     '<span class="tile-n"><b>' + items.length + '</b><span>' + (prio ? prio + ' prioritaire' + (prio>1?'s':'') : 'à explorer') + '</span></span>'
+         +     '<span class="tbar" role="img" aria-label="' + prio + ' prioritaires, ' + expl + ' à explorer">'
+         +       (prio ? '<i class="p" style="width:' + (w*prio) + '%"></i>' : "")
+         +       (expl ? '<i class="e" style="width:' + (w*expl) + '%"></i>' : "")
+         +     '</span>'
+         +   '</span>'
+         + '</a>';
+    });
+    document.getElementById("tiles").innerHTML = h;
+  }
+
+  /* ── matrice enjeu × effort ──────────────────── */
+  var EFF = ["Léger", "Moyen", "Chantier"];
+  var ENJ = [{v:3, l:"Fort"}, {v:2, l:"Moyen"}, {v:1, l:"Limité"}];
+  function buildMatrix(scored){
+    var h = '<div class="mx-h"></div>';
+    EFF.forEach(function(e){ h += '<div class="mx-h col">' + e + '</div>'; });
+    ENJ.forEach(function(row){
+      h += '<div class="mx-h row">' + row.l + '</div>';
+      for(var eff = 1; eff <= 3; eff++){
+        var items = scored.filter(function(x){ return x.l.enjeu === row.v && x.l.effort === eff; });
+        var q1 = (row.v === 3 && eff === 1) ? " q1" : "";
+        h += '<div class="cell' + q1 + (items.length ? "" : " zero") + '">';
+        if(q1) h += '<span class="tag">Gains rapides</span>';
+        h += '<b>' + items.length + '</b><span class="codes">';
+        items.forEach(function(x){
+          h += '<button type="button" data-go="' + x.l.id + '" title="' + esc(x.l.title) + '">' + x.l.id + '</button>';
+        });
+        h += '</span></div>';
+      }
+    });
+    document.getElementById("mx").innerHTML = h;
+  }
+
+  /* ── échéances ───────────────────────────────── */
+  function buildDates(scored){
+    var items = scored.filter(function(x){ return !!x.l.echeance; });
+    items.sort(function(a,b){ return a.l.echeance < b.l.echeance ? -1 : 1; });
+    var h = items.map(function(x){
+      return '<div class="date-row">'
+           +   '<span class="date-d">' + esc(x.l.echeance) + '</span>'
+           +   '<span class="date-t">' + esc(x.l.title) + '</span>'
+           +   '<span class="date-w">' + esc(x.l.teaser) + '</span>'
+           +   '<button type="button" data-go="' + x.l.id + '">Voir le levier</button>'
+           + '</div>';
+    }).join("");
+    document.getElementById("dates").innerHTML = h || '<p class="empty" style="padding:16px 0">Aucune échéance datée sur votre profil.</p>';
+  }
+
+  /* aller à un levier, l'ouvrir, le signaler */
+  function goTo(id){
+    filter = "tout";
+    query = "";
+    domFilter = "";
+    var qi = document.getElementById("q");
+    if(qi) qi.value = "";
+    Array.prototype.forEach.call(document.querySelectorAll("#filters .chip"), function(b){
+      b.setAttribute("aria-pressed", b.getAttribute("data-f") === "tout" ? "true" : "false");
+    });
+    render();
+    var el = document.getElementById("lev-" + id);
+    if(!el) return;
+    el.open = true;
+    openState[id] = true;
+    el.scrollIntoView({behavior:"smooth", block:"start"});
+    el.classList.add("flash");
+    setTimeout(function(){ el.classList.remove("flash"); }, 1600);
+    try{ history.replaceState(null, "", "#lev-" + id); }catch(e){}
+  }
+  document.addEventListener("click", function(e){
+    var b = e.target.closest && e.target.closest("[data-go]");
+    if(!b) return;
+    goTo(b.getAttribute("data-go"));
+  });
+
+  /* résumé du profil, visible seulement à l'impression */
+  function summarise(){
+    var out = [];
+    FIELDS.forEach(function(n){
+      var el = form.querySelector('input[name="'+n+'"]:checked');
+      if(!el) return;
+      var lab = form.querySelector('label[for="'+el.id+'"]');
+      if(lab) out.push(lab.textContent.trim());
+    });
+    var pr = [];
+    Array.prototype.forEach.call(form.querySelectorAll('input[name="projet"]:checked'), function(el){
+      var lab = form.querySelector('label[for="'+el.id+'"]');
+      if(lab) pr.push(lab.textContent.trim().toLowerCase());
+    });
+    var t = "Situation retenue : " + out.join(" · ");
+    if(pr.length) t += ". Projets à 12 mois : " + pr.join(", ") + ".";
+    document.getElementById("profil-print").textContent = t;
+    var SOUCI_TXT = {
+      treso:"la trésorerie", impot:"l'impôt et les charges", temps:"le temps que ça vous prend",
+      risques:"les risques", croissance:"la croissance"
+    };
+    var sc = form.querySelector('input[name="souci"]:checked');
+    document.getElementById("route-hint").textContent = sc
+      ? "Classés par enjeu, par effort et par urgence, avec un coup de pouce à " + SOUCI_TXT[sc.value] + "."
+      : "Classés par ce qu'ils rapportent, ce qu'ils demandent, et l'urgence de la date.";
+
+    document.getElementById("bar-sum").textContent = out.join(" · ");
+    document.getElementById("bar-sum").title = t;
+    document.getElementById("profil-sum").innerHTML =
+      out.map(function(v){ return '<span class="sum-chip">' + esc(v) + "</span>"; }).join("") +
+      pr.map(function(v){ return '<span class="sum-chip on">' + esc(v) + "</span>"; }).join("");
+
+    updateProgress();
+  }
+
+  function updateProgress(){
+    var nd = Object.keys(dropped).length;
+    var note = document.getElementById("dropped-note");
+    document.getElementById("dropped-n").textContent = nd;
+    note.hidden = nd === 0;
+
+    var np = Object.keys(picked).filter(function(k){ return picked[k]; }).length;
+    var univers = lastCount + nd;
+    var pct = univers ? Math.min(100, Math.round((np + nd) / univers * 100)) : 0;
+    document.querySelector("#progress i").style.width = pct + "%";
+    document.getElementById("progress").title =
+      np + " retenus et " + nd + " écartés sur " + univers + " leviers qui vous concernent";
+  }
+
+  var obs = null;
+  function spy(){
+    if(!window.IntersectionObserver) return;
+    if(obs) obs.disconnect();
+    obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        var key = en.target.id.replace("dom-", "");
+        Array.prototype.forEach.call(nav.querySelectorAll("a"), function(a){
+          a.classList.toggle("on", a.getAttribute("data-dom") === key);
+        });
+      });
+    }, {rootMargin:"-10% 0px -75% 0px"});
+    Array.prototype.forEach.call(results.querySelectorAll(".domain"), function(s){ obs.observe(s); });
+  }
+
+  function byId(id){
+    for(var i = 0; i < L.length; i++){ if(L[i].id === id) return L[i]; }
+    return null;
+  }
+
+  function renderList(){
+    var ol = document.getElementById("qs");
+    var empty = document.getElementById("qs-empty");
+    var count = document.getElementById("qs-count");
+    var ids = Object.keys(picked).filter(function(k){ return picked[k]; });
+    ol.innerHTML = ids.map(function(id){
+      var l = byId(id);
+      if(!l) return "";
+      return '<li><span class="q-src">' + l.id + " · " + esc(l.title) + "</span>" + esc(l.ask) + "</li>";
+    }).join("");
+    empty.style.display = ids.length ? "none" : "block";
+    count.textContent = ids.length + (ids.length > 1 ? " questions retenues" : " question retenue");
+    document.querySelector("#to-list b").textContent = ids.length;
+    updateProgress();
+  }
+
+  form.addEventListener("change", render);
+
+  /* ajouter ou retirer, depuis la ligne comme depuis le détail */
+  document.addEventListener("click", function(e){
+    var a = e.target.closest && e.target.closest(".route-side [data-add]");
+    if(!a) return;
+    var rid = a.getAttribute("data-add");
+    picked[rid] = !picked[rid];
+    syncAdd(rid);
+    renderList();
+    save(readProfile());
+  });
+
+  results.addEventListener("click", function(e){
+    var add = e.target.closest && e.target.closest("[data-add]");
+    if(add){
+      e.preventDefault();
+      e.stopPropagation();
+      var id = add.getAttribute("data-add");
+      picked[id] = !picked[id];
+      syncAdd(id);
+      renderList();
+      save(readProfile());
+      return;
+    }
+    var dr = e.target.closest && e.target.closest("[data-drop]");
+    if(dr){
+      var did = dr.getAttribute("data-drop");
+      dropped[did] = true;
+      delete picked[did];
+      delete openState[did];
+      render();
+      save(readProfile());
+    }
+  });
+
+  function syncAdd(id){
+    var on = !!picked[id];
+    Array.prototype.forEach.call(document.querySelectorAll('[data-add="' + id + '"]'), function(b){
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+      if(b.classList.contains("wide")){
+        b.textContent = on ? "✓ Retenue" : "+ Ajouter";
+      } else if(b.classList.contains("l-add")){
+        b.textContent = on ? "✓" : "+";
+        b.title = on ? "Retirer de ma liste" : "Ajouter à ma liste de questions";
+      } else {
+        b.textContent = on ? "✓ Dans ma liste" : "Ajouter à ma liste";
+      }
+    });
+  }
+
+  /* mémoriser ce qui est déplié, pour ne rien perdre en filtrant */
+  results.addEventListener("toggle", function(e){
+    var d = e.target;
+    if(d && d.tagName === "DETAILS" && d.id.indexOf("lev-") === 0){
+      openState[d.id.slice(4)] = d.open;
+    }
+  }, true);
+
+  document.getElementById("open-all").addEventListener("click", function(){
+    Array.prototype.forEach.call(results.querySelectorAll("details.lever"), function(d){
+      d.open = true;
+      openState[d.id.slice(4)] = true;
+    });
+  });
+  document.getElementById("close-all").addEventListener("click", function(){
+    Array.prototype.forEach.call(results.querySelectorAll("details.lever"), function(d){
+      d.open = false;
+      openState[d.id.slice(4)] = false;
+    });
+  });
+
+  document.getElementById("restore").addEventListener("click", function(){
+    dropped = {};
+    render();
+    save(readProfile());
+  });
+
+  /* les sept questions d'affinage */
+  var moreBtn = document.getElementById("toggle-more");
+  var moreBox = document.getElementById("more");
+  function showMore(open){
+    moreBox.hidden = !open;
+    moreBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    moreBtn.lastChild.nodeValue = open ? "Masquer les questions d'affinage" : "Affiner avec sept questions de plus";
+  }
+  moreBtn.addEventListener("click", function(){
+    showMore(moreBox.hidden);
+    if(!moreBox.hidden) moreBox.querySelector("input").focus();
+  });
+
+  /* préparer un e-mail pour l'expert-comptable */
+  document.getElementById("mail").addEventListener("click", function(){
+    var txt = listText();
+    if(!txt){ toast("Votre liste est vide"); return; }
+    var url = "mailto:?subject=" + encodeURIComponent("Questions avant notre prochain rendez-vous")
+            + "&body=" + encodeURIComponent("Bonjour,\n\nAvant notre prochain point, j'aimerais aborder les sujets suivants.\n\n" + txt + "\n\nMerci d'avance,\n");
+    var w = null;
+    try{ w = window.open(url, "_blank"); }catch(e){ w = null; }
+    if(!w) copyText(txt, "Copié : collez-le dans votre e-mail");
+  });
+
+  /* partager le lien, quand la page est en ligne */
+  (function(){
+    var btn = document.getElementById("share");
+    if(location.protocol !== "http:" && location.protocol !== "https:") return;
+    btn.hidden = false;
+    btn.addEventListener("click", function(){
+      copyText(location.href.split("#")[0], "Lien copié");
+    });
+  })();
+
+  /* repartir de zéro */
+  document.getElementById("reset").addEventListener("click", function(){
+    picked = {};
+    dropped = {};
+    openState = {};
+    try{ localStorage.removeItem(STORE); }catch(e){}
+    Array.prototype.forEach.call(form.querySelectorAll("input"), function(el){
+      el.checked = el.defaultChecked;
+    });
+    filter = "tout";
+    query = "";
+    qEl.value = "";
+    Array.prototype.forEach.call(document.querySelectorAll("#filters .chip"), function(b){
+      b.setAttribute("aria-pressed", b.getAttribute("data-f") === "tout" ? "true" : "false");
+    });
+    foldProfil(false);
+    foldHowto(false);
+    showMore(false);
+    document.getElementById("prefill-note").textContent = "Quatre questions suffisent pour commencer. Les réponses de départ sont celles du cas le plus courant.";
+    render();
+    document.querySelector("header.top").scrollIntoView({block:"start"});
+  });
+
+  document.getElementById("fold-profil").addEventListener("click", function(){
+    var closed = document.querySelector("section.profil").classList.contains("closed");
+    foldProfil(!closed);
+    if(closed) document.querySelector("section.profil").scrollIntoView({block:"start"});
+  });
+  document.getElementById("edit-profil").addEventListener("click", function(){
+    foldProfil(false);
+    document.querySelector("section.profil").scrollIntoView({block:"start"});
+  });
+  ["to-top", "to-top-m"].forEach(function(id){
+    document.getElementById(id).addEventListener("click", function(){
+      window.scrollTo({top:0, behavior:"smooth"});
+    });
+  });
+  document.getElementById("to-list").addEventListener("click", function(){
+    document.getElementById("liste").scrollIntoView({block:"start"});
+  });
+
+  /* raccourcis */
+  document.addEventListener("keydown", function(e){
+    var t = e.target.tagName;
+    if(e.key === "/" && t !== "INPUT" && t !== "TEXTAREA"){
+      e.preventDefault();
+      qEl.focus();
+      qEl.select();
+    } else if(e.key === "Escape" && document.activeElement === qEl){
+      qEl.value = "";
+      query = "";
+      render();
+      qEl.blur();
+    }
+  });
+
+  /* filtrer sur une seule rubrique, depuis la colonne ou depuis une tuile */
+  function setDom(key){
+    domFilter = (domFilter === key) ? "" : key;
+    render();
+    var top = document.querySelector(".shell");
+    if(top) top.scrollIntoView({block:"start"});
+  }
+  document.addEventListener("click", function(e){
+    var link = e.target.closest && e.target.closest("[data-dom]");
+    if(link){
+      e.preventDefault();
+      setDom(link.getAttribute("data-dom"));
+      return;
+    }
+    if(e.target.id === "all-dom"){
+      domFilter = "";
+      render();
+    }
+  });
+
+  document.getElementById("filters").addEventListener("click", function(e){
+    var c = e.target.closest && e.target.closest(".chip");
+    if(!c) return;
+    filter = c.getAttribute("data-f");
+    Array.prototype.forEach.call(this.querySelectorAll(".chip"), function(b){
+      b.setAttribute("aria-pressed", b === c ? "true" : "false");
+    });
+    render();
+  });
+
+  var qEl = document.getElementById("q");
+  qEl.addEventListener("input", function(){
+    query = qEl.value.trim().toLowerCase();
+    render();
+  });
+
+  document.getElementById("clear").addEventListener("click", function(){
+    var ids = Object.keys(picked);
+    picked = {};
+    ids.forEach(syncAdd);
+    renderList();
+    save(readProfile());
+  });
+
+  function toast(msg){
+    var t = document.getElementById("toast");
+    t.textContent = msg;
+    t.classList.add("on");
+    clearTimeout(toast._t);
+    toast._t = setTimeout(function(){ t.classList.remove("on"); }, 2200);
+  }
+
+  function listText(){
+    var ids = Object.keys(picked).filter(function(k){ return picked[k]; });
+    if(!ids.length) return "";
+    return ids.map(function(id, i){
+      var l = byId(id);
+      return (i + 1) + ". " + l.title + "\n   " + l.ask;
+    }).join("\n\n");
+  }
+
+  function copyText(txt, okMsg){
+    function fallback(){
+      var ta = document.createElement("textarea");
+      ta.value = txt;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try{ ok = document.execCommand("copy"); }catch(e){ ok = false; }
+      document.body.removeChild(ta);
+      toast(ok ? okMsg : "Copie impossible, sélectionnez le texte");
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(function(){ toast(okMsg); }, fallback);
+    } else {
+      fallback();
+    }
+  }
+
+  document.getElementById("copy").addEventListener("click", function(){
+    var txt = listText();
+    if(!txt){ toast("Votre liste est vide"); return; }
+    copyText("Questions pour mon expert-comptable\n\n" + txt, "Copié");
+  });
+
+  /* à l'impression, tout est déplié */
+  window.addEventListener("beforeprint", function(){
+    Array.prototype.forEach.call(results.querySelectorAll("details.lever"), function(d){ d.open = true; });
+  });
+
+  document.getElementById("n-cat").textContent = L.length;
+  document.getElementById("stat-lev").textContent = L.length;
+  document.getElementById("stat-dom").textContent = DOMAINS.length;
+  document.getElementById("stat-q").textContent = form.querySelectorAll("fieldset").length;
+  document.getElementById("sign-count").textContent = L.length + " leviers · " + DOMAINS.length + " rubriques";
+  restore();
+  render();
+
+  /* lien direct vers un levier : #lev-REM-01 */
+  (function(){
+    var m = /^#lev-([A-Z]{3}-\d{2})$/.exec(location.hash || "");
+    if(m) setTimeout(function(){ goTo(m[1]); }, 60);
+  })();
+})();
+</script>
+
+</body>
+</html>
